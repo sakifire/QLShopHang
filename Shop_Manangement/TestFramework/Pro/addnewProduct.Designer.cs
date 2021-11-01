@@ -95,7 +95,7 @@
             this.guna2Panel2.Controls.Add(this.lbname);
             this.guna2Panel2.Controls.Add(this.lbid);
             this.guna2Panel2.Location = new System.Drawing.Point(53, 167);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1071, 625);
@@ -125,12 +125,11 @@
             "Watch"});
             this.comboBox1.ItemsAppearance.Parent = this.comboBox1;
             this.comboBox1.Location = new System.Drawing.Point(197, 190);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.ShadowDecoration.Parent = this.comboBox1;
             this.comboBox1.Size = new System.Drawing.Size(337, 36);
             this.comboBox1.TabIndex = 40;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // dtpinput
             // 
@@ -140,7 +139,7 @@
             this.dtpinput.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpinput.HoverState.Parent = this.dtpinput;
             this.dtpinput.Location = new System.Drawing.Point(197, 443);
-            this.dtpinput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpinput.Margin = new System.Windows.Forms.Padding(4);
             this.dtpinput.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpinput.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpinput.Name = "dtpinput";
@@ -189,7 +188,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(691, 553);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(311, 55);
@@ -206,7 +205,7 @@
             this.btnpic.ForeColor = System.Drawing.Color.White;
             this.btnpic.HoverState.Parent = this.btnpic;
             this.btnpic.Location = new System.Drawing.Point(724, 460);
-            this.btnpic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpic.Margin = new System.Windows.Forms.Padding(4);
             this.btnpic.Name = "btnpic";
             this.btnpic.ShadowDecoration.Parent = this.btnpic;
             this.btnpic.Size = new System.Drawing.Size(240, 55);
@@ -219,7 +218,7 @@
             this.pic.BackColor = System.Drawing.Color.Transparent;
             this.pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic.Location = new System.Drawing.Point(633, 30);
-            this.pic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pic.Margin = new System.Windows.Forms.Padding(4);
             this.pic.Name = "pic";
             this.pic.ShadowDecoration.Parent = this.pic;
             this.pic.Size = new System.Drawing.Size(398, 423);
@@ -333,7 +332,6 @@
             this.txtid.ShadowDecoration.Parent = this.txtid;
             this.txtid.Size = new System.Drawing.Size(339, 44);
             this.txtid.TabIndex = 25;
-            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
             // lbamount
             // 
@@ -426,7 +424,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox1.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox1.Location = new System.Drawing.Point(1251, 1);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(37, 38);
@@ -445,7 +443,7 @@
             this.panel14.Controls.Add(this.menuStrip1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1185, 145);
             this.panel14.TabIndex = 40;
@@ -456,7 +454,7 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox3.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox3.Location = new System.Drawing.Point(1144, 4);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(37, 38);
@@ -500,7 +498,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(12, 94);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(435, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(292, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -513,41 +511,41 @@
             this.salaryToolStripMenuItem,
             this.statisticToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(75, 36);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 36);
             this.toolStripMenuItem1.Text = "Staff";
             // 
             // addStaffToolStripMenuItem
             // 
             this.addStaffToolStripMenuItem.Name = "addStaffToolStripMenuItem";
-            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.addStaffToolStripMenuItem.Text = "Add Staff";
             this.addStaffToolStripMenuItem.Click += new System.EventHandler(this.addStaffToolStripMenuItem_Click);
             // 
             // detailToolStripMenuItem
             // 
             this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
-            this.detailToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.detailToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.detailToolStripMenuItem.Text = "List Staff";
             this.detailToolStripMenuItem.Click += new System.EventHandler(this.detailToolStripMenuItem_Click);
             // 
             // timekeepingToolStripMenuItem
             // 
             this.timekeepingToolStripMenuItem.Name = "timekeepingToolStripMenuItem";
-            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.timekeepingToolStripMenuItem.Text = "Timekeeping";
             this.timekeepingToolStripMenuItem.Click += new System.EventHandler(this.timekeepingToolStripMenuItem_Click);
             // 
             // salaryToolStripMenuItem
             // 
             this.salaryToolStripMenuItem.Name = "salaryToolStripMenuItem";
-            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.salaryToolStripMenuItem.Text = "Salary";
             this.salaryToolStripMenuItem.Click += new System.EventHandler(this.salaryToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem
             // 
             this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.statisticToolStripMenuItem.Text = "Statistic";
             this.statisticToolStripMenuItem.Click += new System.EventHandler(this.statisticToolStripMenuItem_Click);
             // 
@@ -559,34 +557,34 @@
             this.saleToolStripMenuItem,
             this.statisticToolStripMenuItem1});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(109, 36);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
             this.productToolStripMenuItem.Text = "Product";
             // 
             // listProductsToolStripMenuItem
             // 
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.listProductsToolStripMenuItem.Text = "Manage Product";
             this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
             // 
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.addProductToolStripMenuItem.Text = "Add Product";
             this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
             // saleToolStripMenuItem
             // 
             this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.saleToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.saleToolStripMenuItem.Text = "Sale";
             this.saleToolStripMenuItem.Click += new System.EventHandler(this.saleToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem1
             // 
             this.statisticToolStripMenuItem1.Name = "statisticToolStripMenuItem1";
-            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(272, 36);
+            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(280, 36);
             this.statisticToolStripMenuItem1.Text = "Statistic";
             this.statisticToolStripMenuItem1.Click += new System.EventHandler(this.statisticToolStripMenuItem1_Click);
             // 
@@ -596,20 +594,20 @@
             this.newOrderToolStripMenuItem,
             this.manageOrderToolStripMenuItem});
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
             this.orderToolStripMenuItem.Text = "Order";
             // 
             // newOrderToolStripMenuItem
             // 
             this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
-            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.newOrderToolStripMenuItem.Text = "New Order";
             this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
             // 
             // manageOrderToolStripMenuItem
             // 
             this.manageOrderToolStripMenuItem.Name = "manageOrderToolStripMenuItem";
-            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.manageOrderToolStripMenuItem.Text = "Manage Order";
             this.manageOrderToolStripMenuItem.Click += new System.EventHandler(this.manageOrderToolStripMenuItem_Click);
             // 
@@ -624,7 +622,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addnewProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStaff";

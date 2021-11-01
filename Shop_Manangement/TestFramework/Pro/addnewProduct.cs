@@ -18,11 +18,6 @@ namespace TestFramework
             InitializeComponent();
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnpic_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -38,15 +33,40 @@ namespace TestFramework
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             PRODUCT product = new PRODUCT();
-            int ms = Convert.ToInt32(txtid.Text);
-            string name = txtname.Text;
-            int price = Convert.ToInt32(txtprice.Text);
-            string description = txtdes.Text;
-            string type = comboBox1.SelectedItem.ToString();
-            DateTime inputday = (DateTime)dtpinput.Value;
-            int amount = Convert.ToInt32(txtamount.Text);
-            MemoryStream picture = new MemoryStream();
+            int ms, price, amount;
+            string name, description, type;
+            #region Check Text
+            if (checkNumber(txtid.Text.ToString())
+                || checkNumber(txtprice.Text.ToString())
+                || checkNumber(txtamount.Text.ToString()))
+            {
+                ms = Convert.ToInt32(txtid.Text);
+                price = Convert.ToInt32(txtprice.Text);
+                amount = Convert.ToInt32(txtamount.Text);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
+           
+            if (txtname.Text.ToString() != ""
+                || txtdes.Text.ToString() != ""
+                || comboBox1.SelectedItem.ToString() != "")
+            {
+                name = txtname.Text;
+                description = txtdes.Text;
+                type = comboBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
 
+            DateTime inputday = (DateTime)dtpinput.Value;
+            MemoryStream picture = new MemoryStream();
+            #endregion
             if (verif())
             {
 
@@ -63,14 +83,7 @@ namespace TestFramework
 
         }
 
-        bool verif()
-        {
-            if ((txtname.Text.Trim() == "") || (txtprice.Text.Trim() == "") || (pic.Image == null))
-            {
-                return false;
-            }
-            else return true;
-        }
+        
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -81,11 +94,6 @@ namespace TestFramework
         {
             Pro.Manaform mana = new Pro.Manaform();
             mana.ShowDialog();
-        }
-
-        private void txtid_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void lbid_Click(object sender, EventArgs e)
@@ -175,6 +183,26 @@ namespace TestFramework
             manaord.Show();
             this.Close();
         }
+
+        #region logic function
+        bool verif()
+        {
+            if ((txtname.Text.Trim() == "") || (txtprice.Text.Trim() == "") || (pic.Image == null))
+            {
+                return false;
+            }
+            else return true;
+        }
+
+        bool checkNumber(string text)
+        {
+            if (text != "" && Char.IsNumber(Convert.ToChar(text)))
+            {
+                return true;
+            }
+            else return false;
+        }
+        #endregion logic function
     }
 }
 
