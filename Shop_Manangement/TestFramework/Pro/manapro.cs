@@ -228,12 +228,9 @@ namespace TestFramework.Pro
             int ms, price, amount;
             string name, description, type;
             DateTime inputday;
-            if (checkNumber(txtms.Text.ToString()) 
-                || checkNumber(txtprice.Text.ToString())
-                || checkNumber(txtSL.Text.ToString())
-                // || txtdes.Text.ToString() != ""
-                // || txtname.Text.ToString() != ""
-                // || comboBox1.SelectedItem.ToString() != ""
+            if (checkNumber(txtms.Text) 
+                || checkNumber(txtprice.Text)
+                || checkNumber(txtSL.Text)
                 )
             {
                 ms = Convert.ToInt32(txtms.Text);
@@ -438,7 +435,7 @@ namespace TestFramework.Pro
             manaord.Show();
             this.Close();
         }
-        
+
         #region logic function
         public bool IsNumber(string pValue)
         {
@@ -457,6 +454,7 @@ namespace TestFramework.Pro
             }
             else return false;
         }
-        #endregion
     }
+        #endregion
+    
 }
