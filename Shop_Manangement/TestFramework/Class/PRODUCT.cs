@@ -83,9 +83,6 @@ namespace TestFramework
             }
         }
 
-
-
-
         public bool deleteProduct(int id)
         {
             SqlCommand command = new SqlCommand("update Product set state = 0 where id =@id ", mydb.GetConnection);

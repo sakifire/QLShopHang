@@ -92,7 +92,7 @@ namespace TestFramework.Pro
 
         private void comboBox1_MouseLeave(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Type")
+            if (comboBox1.Text == "")
             {
                 label5.Visible = false;
             }
@@ -103,7 +103,7 @@ namespace TestFramework.Pro
             if (txtms.Text == "")
             {
                 label1.Visible = false;
-                txtms.Text = "MS";
+                txtms.Text = "";
             }
         }
 
@@ -112,7 +112,7 @@ namespace TestFramework.Pro
             if (txtname.Text == "")
             {
                 label2.Visible = false;
-                txtname.Text = "Name";
+                txtname.Text = "";
             }
         }
 
@@ -121,7 +121,7 @@ namespace TestFramework.Pro
             if (txtprice.Text == "")
             {
                 label3.Visible = false;
-                txtprice.Text = "Price";
+                txtprice.Text = "";
             }
         }
 
@@ -130,7 +130,7 @@ namespace TestFramework.Pro
             if (txtdes.Text == "")
             {
                 label4.Visible = false;
-                txtdes.Text = "Description";
+                txtdes.Text = "";
             }
         }
 
@@ -145,7 +145,7 @@ namespace TestFramework.Pro
             if (txtSL.Text == "")
             {
                 label8.Visible = false;
-                txtSL.Text = "Amount";
+                txtSL.Text = "";
             }
         }
         PRODUCT product = new PRODUCT();
@@ -197,7 +197,7 @@ namespace TestFramework.Pro
                 if (product.addProduct(ms, name, price, description, type, inputday, amount, pic))
                 {
                     MessageBox.Show("New Product Added", "Add Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    fillGrid(new SqlCommand("SELECT * FROM pdt"));
+                    fillGrid(new SqlCommand("SELECT * FROM Product"));
                     txtdes.Clear();
                     txtms.Clear();
                     txtname.Clear();
@@ -225,24 +225,41 @@ namespace TestFramework.Pro
         }
         private void btnedit_Click(object sender, EventArgs e)
         {
-            int ms;
-            string name = txtname.Text;
-            int price = Convert.ToInt32(txtprice.Text);
-            string description = txtdes.Text;
-            string type = comboBox1.SelectedItem.ToString();
-            DateTime inputday = dtpinput.Value;
-            int amount = Convert.ToInt32(txtSL.Text);
+            int ms, price, amount;
+            string name, description, type;
+            DateTime inputday;
+            if (checkNumber(txtms.Text.ToString()) 
+                || checkNumber(txtprice.Text.ToString())
+                || checkNumber(txtSL.Text.ToString())
+                // || txtdes.Text.ToString() != ""
+                // || txtname.Text.ToString() != ""
+                // || comboBox1.SelectedItem.ToString() != ""
+                )
+            {
+                ms = Convert.ToInt32(txtms.Text);
+                price = Convert.ToInt32(txtprice.Text);
+                amount = Convert.ToInt32(txtSL.Text);
+                name = txtname.Text;
+                description = txtdes.Text;
+                type = comboBox1.SelectedItem.ToString();
+                inputday = dtpinput.Value;
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
+            
             MemoryStream pic = new MemoryStream();
             try
             {
                 if (verif())
                 {
-                    ms = Convert.ToInt32(txtms.Text);
                     pctPr.Image.Save(pic, pctPr.Image.RawFormat);
                     if (product.updateProduct(ms, name, price, description, type, inputday, amount, pic))
                     {
                         MessageBox.Show("Product Edited", "Manage Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        fillGrid(new SqlCommand("select * from pdt"));
+                        fillGrid(new SqlCommand("select * from Product"));
 
                     }
                     else
@@ -421,5 +438,25 @@ namespace TestFramework.Pro
             manaord.Show();
             this.Close();
         }
+        
+        #region logic function
+        public bool IsNumber(string pValue)
+        {
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
+        }
+        bool checkNumber(string text)
+        {
+            if (text != "" && IsNumber(text))
+            {
+                return true;
+            }
+            else return false;
+        }
+        #endregion
     }
 }
