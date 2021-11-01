@@ -454,6 +454,11 @@ namespace TestFramework.Pro
             }
             else return false;
         }
+
+        private void txtms_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
         #endregion
     
