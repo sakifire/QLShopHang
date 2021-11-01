@@ -194,9 +194,18 @@ namespace TestFramework
             else return true;
         }
 
+        public bool IsNumber(string pValue)
+        {
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
+        }
         bool checkNumber(string text)
         {
-            if (text != "" && Char.IsNumber(Convert.ToChar(text)))
+            if (text != "" && IsNumber(text))
             {
                 return true;
             }
