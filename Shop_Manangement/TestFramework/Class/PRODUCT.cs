@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Windows.Forms;
 
 namespace TestFramework
 {
@@ -28,6 +29,13 @@ namespace TestFramework
             command.Parameters.Add("@state", SqlDbType.Int).Value = 1;
             mydb.openConnection();
 
+            PRODUCT product = new PRODUCT();
+            if(product.getProductById(id).Rows.Count == 1)
+            {
+                MessageBox.Show("Mã sản phẩm đã tồn tại");
+                return false;
+            }
+            
             if (command.ExecuteNonQuery() == 1)
             {
                 mydb.closeConnection();
@@ -38,6 +46,7 @@ namespace TestFramework
                 mydb.closeConnection();
                 return false;
             }
+
         }
 
         public bool updateProduct(int id, string name, int price, string description, string type, DateTime inputday, int amount, MemoryStream picture)

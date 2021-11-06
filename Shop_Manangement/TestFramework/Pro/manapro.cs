@@ -18,12 +18,11 @@ namespace TestFramework.Pro
         public manapro()
         {
             InitializeComponent();
+            btnAdd.Enabled = true;
+            btnedit.Enabled = false;
+            btnRemove.Enabled = false;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void manapro_Load(object sender, EventArgs e)
         {
@@ -178,22 +177,42 @@ namespace TestFramework.Pro
         private void btnAdd_Click(object sender, EventArgs e)
         {
             PRODUCT product = new PRODUCT();
-            int ms = Convert.ToInt32(txtms.Text);
-            string name = txtname.Text;
-            int price = Convert.ToInt32(txtprice.Text);
+            int ms, price, amount;
+            string name, type;
+            #region Check text
+            if (checkNumber(txtms.Text) && checkNumber(txtprice.Text) && checkNumber(txtSL.Text))
+            {
+                ms = Convert.ToInt32(txtms.Text);
+                price = Convert.ToInt32(txtprice.Text);
+                amount = Convert.ToInt32(txtSL.Text);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
+            if ((txtname.Text != null || txtname.Text != "")
+                && (comboBox1.SelectedItem.ToString() != null || comboBox1.SelectedItem.ToString() != ""))
+            {
+                name = txtname.Text;
+                type = comboBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
             string description = txtdes.Text;
-            string type = comboBox1.SelectedItem.ToString();
             DateTime inputday = dtpinput.Value;
-            int amount = Convert.ToInt32(txtSL.Text);
             MemoryStream pic = new MemoryStream();
-
+            #endregion
             if (verif())
             {
                 pctPr.Image.Save(pic, pctPr.Image.RawFormat);
                 if (product.addProduct(ms, name, price, description, type, inputday, amount, pic))
                 {
                     MessageBox.Show("New Product Added", "Add Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    fillGrid(new SqlCommand("SELECT * FROM Product"));
+                    fillGrid(new SqlCommand("SELECT * FROM Product where state =1"));
                     txtdes.Clear();
                     txtms.Clear();
                     txtname.Clear();
@@ -201,7 +220,8 @@ namespace TestFramework.Pro
                     txtdes.Clear();
                     comboBox1.Text = "Type";
                     txtSL.Clear();
-                    //pctPr.Image = Properties.Resources.Circle_icons_image_svg;
+                    btnedit.Enabled = false;
+                    btnRemove.Enabled = false;
                 }
                 else
                 {
@@ -222,46 +242,52 @@ namespace TestFramework.Pro
         private void btnedit_Click(object sender, EventArgs e)
         {
             int ms, price, amount;
-            string name, description, type;
-            DateTime inputday;
-            if (checkNumber(txtms.Text.ToString()) 
-                || checkNumber(txtprice.Text.ToString())
-                || checkNumber(txtSL.Text.ToString())
-                // || txtdes.Text.ToString() != ""
-                // || txtname.Text.ToString() != ""
-                // || comboBox1.SelectedItem.ToString() != ""
-                )
+            string name, type;
+            #region Check text
+            if (checkNumber(txtms.Text) && checkNumber(txtprice.Text) && checkNumber(txtSL.Text))
             {
                 ms = Convert.ToInt32(txtms.Text);
                 price = Convert.ToInt32(txtprice.Text);
                 amount = Convert.ToInt32(txtSL.Text);
-                name = txtname.Text;
-                description = txtdes.Text;
-                type = comboBox1.SelectedItem.ToString();
-                inputday = dtpinput.Value;
             }
             else
             {
                 MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
                 return;
             }
-            
-            MemoryStream pic = new MemoryStream();
+            if ((txtname.Text != null || txtname.Text != "")
+                && (comboBox1.SelectedItem.ToString() != null || comboBox1.SelectedItem.ToString() != ""))
+            {
+                name = txtname.Text;
+                type = comboBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền thông tin đầy đủ và đúng định dạng");
+                return;
+            }
+            string description = txtdes.Text;
+            DateTime inputday = dtpinput.Value;
+            #endregion
+
+            MemoryStream picture = new MemoryStream();
             try
             {
+
                 if (verif())
                 {
-                    pctPr.Image.Save(pic, pctPr.Image.RawFormat);
-                    if (product.updateProduct(ms, name, price, description, type, inputday, amount, pic))
-                    {
-                        MessageBox.Show("Product Edited", "Manage Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        fillGrid(new SqlCommand("select * from Product"));
 
+                    pctPr.Image.Save(picture, pctPr.Image.RawFormat);
+                    if (product.updateProduct(ms, name, price, description, type, inputday, amount, picture))
+                    {
+                        MessageBox.Show("Product Updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        fillGrid(new SqlCommand("SELECT * FROM Product where state = 1"));
+                        btnedit.Enabled = false;
+                        btnRemove.Enabled = false;
                     }
                     else
                     {
-                        MessageBox.Show("Error", "Manage Product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                        MessageBox.Show("Error", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 
@@ -314,8 +340,10 @@ namespace TestFramework.Pro
                         txtdes.Text = "Description";
                         comboBox1.Text = "Type";
                         txtSL.Text = "Amount";
-                        //pctPr.Image = Properties.Resources.Circle_icons_image_svg;
-                        fillGrid(new SqlCommand("Select * from pdt"));
+                        fillGrid(new SqlCommand("SELECT * FROM Product where state = 1"));
+                        btnedit.Enabled = false;
+                        btnRemove.Enabled = false;
+
                     }
                     else MessageBox.Show("Error", "Manage Product", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -419,6 +447,10 @@ namespace TestFramework.Pro
             MemoryStream picture = new MemoryStream(pic);
             pctPr.Image = Image.FromStream(picture);
             pctPr.SizeMode = PictureBoxSizeMode.Zoom;
+
+            btnAdd.Enabled = true;
+            btnedit.Enabled = true;
+            btnRemove.Enabled = true;
         }
 
         private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
