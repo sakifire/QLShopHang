@@ -32,7 +32,6 @@ namespace TestFramework.Staff
             int manv = Convert.ToInt32(cbname.SelectedValue);
             DateTime ngaylam = dtchamcong.Value;
             int thang = dtchamcong.Value.Month;
-            dataGridView2.DataSource = cong.LoadCCngay(ngaylam);
             dataGridView1.DataSource = cong.LoadCCthang(thang, manv);
         }
 
@@ -77,7 +76,6 @@ namespace TestFramework.Staff
             }
 
             int thang = dtchamcong.Value.Month;
-            dataGridView2.DataSource = cong.LoadCCngay(ngay);
             dataGridView1.DataSource = cong.LoadCCthang(thang, manv);
         }
 

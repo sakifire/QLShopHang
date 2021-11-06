@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DiamondGroupDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DiamondGroupDataSet7.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -288,6 +293,17 @@
     </None>
     <None Include="DiamondGroupDataSet.xss">
       <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DiamondGroupDataSet1.xsc">
+      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DiamondGroupDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiamondGroupDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiamondGroupDataSet1.xss">
+      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
     </None>
     <None Include="DiamondGroupDataSet7.xsc">
       <DependentUpon>DiamondGroupDataSet7.xsd</DependentUpon>

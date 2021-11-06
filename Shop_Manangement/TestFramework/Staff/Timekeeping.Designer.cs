@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtchamcong = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cbname = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -44,7 +41,6 @@
             this.rbAbsent = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbgiora = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbgiovao = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.dataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -68,7 +64,6 @@
             this.manageOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panel14.SuspendLayout();
@@ -84,7 +79,7 @@
             this.panel1.Controls.Add(this.cbname);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 160);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1276, 89);
             this.panel1.TabIndex = 0;
@@ -99,7 +94,7 @@
             this.dtchamcong.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtchamcong.HoverState.Parent = this.dtchamcong;
             this.dtchamcong.Location = new System.Drawing.Point(16, 15);
-            this.dtchamcong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtchamcong.Margin = new System.Windows.Forms.Padding(4);
             this.dtchamcong.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtchamcong.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtchamcong.Name = "dtchamcong";
@@ -122,7 +117,7 @@
             this.cbname.ItemHeight = 30;
             this.cbname.ItemsAppearance.Parent = this.cbname;
             this.cbname.Location = new System.Drawing.Point(711, 15);
-            this.cbname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbname.Margin = new System.Windows.Forms.Padding(4);
             this.cbname.Name = "cbname";
             this.cbname.ShadowDecoration.Parent = this.cbname;
             this.cbname.Size = new System.Drawing.Size(535, 36);
@@ -149,10 +144,9 @@
             this.panel2.Controls.Add(this.rbAbsent);
             this.panel2.Controls.Add(this.rbgiora);
             this.panel2.Controls.Add(this.rbgiovao);
-            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(35, 250);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1241, 546);
             this.panel2.TabIndex = 1;
@@ -170,7 +164,7 @@
             this.bttable.ForeColor = System.Drawing.Color.DimGray;
             this.bttable.HoverState.Parent = this.bttable;
             this.bttable.Location = new System.Drawing.Point(957, 6);
-            this.bttable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttable.Margin = new System.Windows.Forms.Padding(4);
             this.bttable.Name = "bttable";
             this.bttable.ShadowDecoration.Parent = this.bttable;
             this.bttable.Size = new System.Drawing.Size(253, 55);
@@ -190,7 +184,7 @@
             this.btconfirm.ForeColor = System.Drawing.Color.DimGray;
             this.btconfirm.HoverState.Parent = this.btconfirm;
             this.btconfirm.Location = new System.Drawing.Point(731, 6);
-            this.btconfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btconfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btconfirm.Name = "btconfirm";
             this.btconfirm.ShadowDecoration.Parent = this.btconfirm;
             this.btconfirm.Size = new System.Drawing.Size(183, 55);
@@ -208,7 +202,7 @@
             this.rbAbsent.CheckedState.InnerOffset = -4;
             this.rbAbsent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbAbsent.Location = new System.Drawing.Point(460, 21);
-            this.rbAbsent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAbsent.Margin = new System.Windows.Forms.Padding(4);
             this.rbAbsent.Name = "rbAbsent";
             this.rbAbsent.Size = new System.Drawing.Size(108, 33);
             this.rbAbsent.TabIndex = 5;
@@ -228,7 +222,7 @@
             this.rbgiora.CheckedState.InnerOffset = -4;
             this.rbgiora.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.rbgiora.Location = new System.Drawing.Point(275, 21);
-            this.rbgiora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbgiora.Margin = new System.Windows.Forms.Padding(4);
             this.rbgiora.Name = "rbgiora";
             this.rbgiora.Size = new System.Drawing.Size(135, 33);
             this.rbgiora.TabIndex = 5;
@@ -248,7 +242,7 @@
             this.rbgiovao.CheckedState.InnerOffset = -4;
             this.rbgiovao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.rbgiovao.Location = new System.Drawing.Point(100, 21);
-            this.rbgiovao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbgiovao.Margin = new System.Windows.Forms.Padding(4);
             this.rbgiovao.Name = "rbgiovao";
             this.rbgiovao.Size = new System.Drawing.Size(121, 33);
             this.rbgiovao.TabIndex = 5;
@@ -258,98 +252,41 @@
             this.rbgiovao.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rbgiovao.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // dataGridView2
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView2.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView2.Location = new System.Drawing.Point(625, 69);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(616, 473);
-            this.dataGridView2.TabIndex = 4;
-            this.dataGridView2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGridView2.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGridView2.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView2.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView2.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView2.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView2.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dataGridView2.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView2.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataGridView2.ThemeStyle.HeaderStyle.Height = 30;
-            this.dataGridView2.ThemeStyle.ReadOnly = false;
-            this.dataGridView2.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView2.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView2.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dataGridView2.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridView2.ThemeStyle.RowsStyle.Height = 22;
-            this.dataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // dataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(8, 69);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(609, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(1229, 473);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -380,7 +317,7 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox3.Image = global::TestFramework.Properties.Resources.pic7;
             this.guna2PictureBox3.Location = new System.Drawing.Point(0, 784);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(37, 38);
@@ -399,7 +336,7 @@
             this.panel14.Controls.Add(this.menuStrip1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1292, 145);
             this.panel14.TabIndex = 57;
@@ -410,7 +347,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox1.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox1.Location = new System.Drawing.Point(1240, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(37, 38);
@@ -454,7 +391,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(12, 94);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(435, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(292, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -467,41 +404,41 @@
             this.salaryToolStripMenuItem,
             this.statisticToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(75, 36);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 36);
             this.toolStripMenuItem1.Text = "Staff";
             // 
             // addStaffToolStripMenuItem
             // 
             this.addStaffToolStripMenuItem.Name = "addStaffToolStripMenuItem";
-            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.addStaffToolStripMenuItem.Text = "Add Staff";
             this.addStaffToolStripMenuItem.Click += new System.EventHandler(this.addStaffToolStripMenuItem_Click);
             // 
             // detailToolStripMenuItem
             // 
             this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
-            this.detailToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.detailToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.detailToolStripMenuItem.Text = "List Staff";
             this.detailToolStripMenuItem.Click += new System.EventHandler(this.detailToolStripMenuItem_Click);
             // 
             // timekeepingToolStripMenuItem
             // 
             this.timekeepingToolStripMenuItem.Name = "timekeepingToolStripMenuItem";
-            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.timekeepingToolStripMenuItem.Text = "Timekeeping";
             this.timekeepingToolStripMenuItem.Click += new System.EventHandler(this.timekeepingToolStripMenuItem_Click);
             // 
             // salaryToolStripMenuItem
             // 
             this.salaryToolStripMenuItem.Name = "salaryToolStripMenuItem";
-            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.salaryToolStripMenuItem.Text = "Salary";
             this.salaryToolStripMenuItem.Click += new System.EventHandler(this.salaryToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem
             // 
             this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.statisticToolStripMenuItem.Text = "Statistic";
             this.statisticToolStripMenuItem.Click += new System.EventHandler(this.statisticToolStripMenuItem_Click);
             // 
@@ -513,34 +450,34 @@
             this.saleToolStripMenuItem,
             this.statisticToolStripMenuItem1});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(109, 36);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
             this.productToolStripMenuItem.Text = "Product";
             // 
             // listProductsToolStripMenuItem
             // 
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.listProductsToolStripMenuItem.Text = "Manage Product";
             this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
             // 
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.addProductToolStripMenuItem.Text = "Add Product";
             this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
             // saleToolStripMenuItem
             // 
             this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.saleToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.saleToolStripMenuItem.Text = "Sale";
             this.saleToolStripMenuItem.Click += new System.EventHandler(this.saleToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem1
             // 
             this.statisticToolStripMenuItem1.Name = "statisticToolStripMenuItem1";
-            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(272, 36);
+            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(280, 36);
             this.statisticToolStripMenuItem1.Text = "Statistic";
             this.statisticToolStripMenuItem1.Click += new System.EventHandler(this.statisticToolStripMenuItem1_Click);
             // 
@@ -550,20 +487,20 @@
             this.newOrderToolStripMenuItem,
             this.manageOrderToolStripMenuItem});
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
             this.orderToolStripMenuItem.Text = "Order";
             // 
             // newOrderToolStripMenuItem
             // 
             this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
-            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.newOrderToolStripMenuItem.Text = "New Order";
             this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
             // 
             // manageOrderToolStripMenuItem
             // 
             this.manageOrderToolStripMenuItem.Name = "manageOrderToolStripMenuItem";
-            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.manageOrderToolStripMenuItem.Text = "Manage Order";
             this.manageOrderToolStripMenuItem.Click += new System.EventHandler(this.manageOrderToolStripMenuItem_Click);
             // 
@@ -579,7 +516,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Timekeeping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Timekeeping";
@@ -588,7 +525,6 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.panel14.ResumeLayout(false);
@@ -604,7 +540,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2DataGridView dataGridView2;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ComboBox cbname;
