@@ -14,6 +14,7 @@ namespace TestFramework
         MyData mydb = new MyData();
         public bool addProduct(int id, string name, int price, string description, string type, DateTime inputday, int amount, MemoryStream picture)
         {
+
             SqlCommand command = new SqlCommand("insert into Product (id,name,price,description,type,inputday,amount, curnumber ,picture,state) values(@id,@name,@price,@des,@ty,@ind,@am ,@cur,@pic,@state)", mydb.GetConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
             command.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;

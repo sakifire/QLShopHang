@@ -39,7 +39,7 @@ namespace TestFramework.Pro
         }
         public void loadchart2() //ring
         {
-            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type ='Ring' group by name"));
+            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ nam' group by name"));
             chart2.DataSource = table;
             chart2.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart2.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
@@ -49,7 +49,7 @@ namespace TestFramework.Pro
         }
         public void loadchart3() //watch
         {
-            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type ='Watch' group by name"));
+            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ nữ' group by name"));
             chart3.DataSource = table;
             chart3.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart3.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
@@ -59,7 +59,7 @@ namespace TestFramework.Pro
 
         public void loadchart4() //necklace
         {
-            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type ='Necklet' group by name"));
+            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ trẻ em' group by name"));
             chart4.DataSource = table;
             chart4.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart4.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
@@ -103,10 +103,8 @@ namespace TestFramework.Pro
             {
                 chart7.Visible = true;
                 btnbongtai.Visible = true;
-                btndaychuyen.Visible = true;
                 btndongho.Visible = true;
                 btnnhan.Visible = true;
-                btnvong.Visible = true;
             }
             else
             {
@@ -115,10 +113,8 @@ namespace TestFramework.Pro
             if (btn1.Checked == true)
             {
                 btnbongtai.Visible = false;
-                btndaychuyen.Visible = false;
                 btndongho.Visible = false;
                 btnnhan.Visible = false;
-                btnvong.Visible = false;
             }
         }
 
@@ -140,10 +136,8 @@ namespace TestFramework.Pro
             {
                 chart1.Visible = true;
                 btnbongtai.Visible = false;
-                btndaychuyen.Visible = false;
                 btndongho.Visible = false;
                 btnnhan.Visible = false;
-                btnvong.Visible = false;
             }
             else
             {
@@ -175,29 +169,8 @@ namespace TestFramework.Pro
             }
         }
 
-        private void btnvong_CheckedChanged(object sender, EventArgs e)
-        {
-            if (btnvong.Checked == true)
-            {
-                chart6.Visible = true;
-            }
-            else
-            {
-                chart6.Visible = false;
-            }
-        }
-
-        private void btndaychuyen_CheckedChanged(object sender, EventArgs e)
-        {
-            if (btndaychuyen.Checked == true)
-            {
-                chart4.Visible = true;
-            }
-            else
-            {
-                chart4.Visible = false;
-            }
-        }
+       
+      
 
         private void guna2PictureBox3_Click(object sender, EventArgs e)
         {

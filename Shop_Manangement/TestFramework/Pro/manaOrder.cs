@@ -25,10 +25,8 @@ namespace TestFramework.Pro
 
         private void manaOrder_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'billdataset.Bill' table. You can move, or remove it, as needed.
-            this.billTableAdapter.Fill(this.billdataset.Bill);
-            // TODO: This line of code loads data into the 'diamondGroupDataSet3.Bill' table. You can move, or remove it, as needed.
-            //this.billTableAdapter.Fill(this.diamondGroupDataSet3.Bill);
+            // TODO: This line of code loads data into the 'diamondGroupDataSet.Bill' table. You can move, or remove it, as needed.
+            this.billTableAdapter.Fill(this.diamondGroupDataSet.Bill);
 
         }
         Order order = new Order();
@@ -98,9 +96,7 @@ namespace TestFramework.Pro
                     txtproductor.Text = "Name's Product";
                     txtamountor.Text = "Amount";
                     txtpriceor.Text = "Price";
-             
                     txttotalor.Text = "Total";
-
                     txtsaleor.Text = "Sales";
                 }
                 else MessageBox.Show("Error", "Manage Order", MessageBoxButtons.OK, MessageBoxIcon.Warning);

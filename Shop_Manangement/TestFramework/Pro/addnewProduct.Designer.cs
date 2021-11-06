@@ -118,11 +118,9 @@
             this.comboBox1.HoverState.Parent = this.comboBox1;
             this.comboBox1.ItemHeight = 30;
             this.comboBox1.Items.AddRange(new object[] {
-            "Ring",
-            "Neckpalce",
-            "Bracelet",
-            "Earring",
-            "Watch"});
+            "Đồng hồ nam",
+            "Đồng hồ nữ",
+            "Đồng hồ trẻ em"});
             this.comboBox1.ItemsAppearance.Parent = this.comboBox1;
             this.comboBox1.Location = new System.Drawing.Point(197, 190);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);

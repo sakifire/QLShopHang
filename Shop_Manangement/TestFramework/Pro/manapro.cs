@@ -61,11 +61,7 @@ namespace TestFramework.Pro
                 pctPr.Image.Save((svf.FileName + ("." + ImageFormat.Jpeg.ToString())));
         }
 
-        private void btnFind_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void txtms_Click(object sender, EventArgs e)
         {
             txtms.Clear();

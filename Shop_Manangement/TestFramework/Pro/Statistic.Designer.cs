@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistic));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -60,8 +60,6 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btndaychuyen = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnvong = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnbongtai = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btndongho = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnnhan = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -107,36 +105,36 @@
             // 
             // chart1
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart1.Legends.Add(legend8);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(284, 287);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Type";
-            this.chart1.Series.Add(series8);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Type";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(980, 566);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart2.Legends.Add(legend9);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(284, 287);
-            this.chart2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart2.Margin = new System.Windows.Forms.Padding(4);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Ring";
-            this.chart2.Series.Add(series9);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Ring";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(980, 566);
             this.chart2.TabIndex = 7;
             this.chart2.Text = "chart2";
@@ -144,18 +142,18 @@
             // 
             // chart3
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart3.Legends.Add(legend10);
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(284, 287);
-            this.chart3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart3.Margin = new System.Windows.Forms.Padding(4);
             this.chart3.Name = "chart3";
             this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Watch";
-            this.chart3.Series.Add(series10);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Watch";
+            this.chart3.Series.Add(series3);
             this.chart3.Size = new System.Drawing.Size(980, 566);
             this.chart3.TabIndex = 8;
             this.chart3.Text = "chart3";
@@ -163,18 +161,18 @@
             // 
             // chart4
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart4.Legends.Add(legend11);
+            chartArea4.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart4.Legends.Add(legend4);
             this.chart4.Location = new System.Drawing.Point(284, 287);
-            this.chart4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart4.Margin = new System.Windows.Forms.Padding(4);
             this.chart4.Name = "chart4";
             this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Necklace";
-            this.chart4.Series.Add(series11);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Necklace";
+            this.chart4.Series.Add(series4);
             this.chart4.Size = new System.Drawing.Size(980, 566);
             this.chart4.TabIndex = 9;
             this.chart4.Text = "chart4";
@@ -182,18 +180,18 @@
             // 
             // chart5
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart5.Legends.Add(legend12);
+            chartArea5.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart5.Legends.Add(legend5);
             this.chart5.Location = new System.Drawing.Point(284, 287);
-            this.chart5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart5.Margin = new System.Windows.Forms.Padding(4);
             this.chart5.Name = "chart5";
             this.chart5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Earring";
-            this.chart5.Series.Add(series12);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Earring";
+            this.chart5.Series.Add(series5);
             this.chart5.Size = new System.Drawing.Size(980, 566);
             this.chart5.TabIndex = 10;
             this.chart5.Text = "chart5";
@@ -201,18 +199,18 @@
             // 
             // chart6
             // 
-            chartArea13.Name = "ChartArea1";
-            this.chart6.ChartAreas.Add(chartArea13);
-            legend13.Name = "Legend1";
-            this.chart6.Legends.Add(legend13);
+            chartArea6.Name = "ChartArea1";
+            this.chart6.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart6.Legends.Add(legend6);
             this.chart6.Location = new System.Drawing.Point(284, 287);
-            this.chart6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart6.Margin = new System.Windows.Forms.Padding(4);
             this.chart6.Name = "chart6";
             this.chart6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Bracelet";
-            this.chart6.Series.Add(series13);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Bracelet";
+            this.chart6.Series.Add(series6);
             this.chart6.Size = new System.Drawing.Size(980, 566);
             this.chart6.TabIndex = 11;
             this.chart6.Text = "chart6";
@@ -226,7 +224,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(265, 825);
             this.panel1.TabIndex = 6;
@@ -237,7 +235,7 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox3.Image = global::TestFramework.Properties.Resources.pic7;
             this.guna2PictureBox3.Location = new System.Drawing.Point(4, 783);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(37, 38);
@@ -251,14 +249,12 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btn1);
-            this.panel2.Controls.Add(this.btndaychuyen);
-            this.panel2.Controls.Add(this.btnvong);
             this.panel2.Controls.Add(this.btnbongtai);
             this.panel2.Controls.Add(this.btndongho);
             this.panel2.Controls.Add(this.btnnhan);
             this.panel2.Controls.Add(this.btn2);
             this.panel2.Location = new System.Drawing.Point(25, 80);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(213, 638);
             this.panel2.TabIndex = 0;
@@ -287,7 +283,7 @@
             this.btn1.ImageSize = new System.Drawing.Size(40, 40);
             this.btn1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn1.Location = new System.Drawing.Point(4, 49);
-            this.btn1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn1.Margin = new System.Windows.Forms.Padding(5);
             this.btn1.Name = "btn1";
             this.btn1.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
             this.btn1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -300,82 +296,6 @@
             this.btn1.TabIndex = 1;
             this.btn1.Text = "Store";
             this.btn1.CheckedChanged += new System.EventHandler(this.btn1_CheckedChanged);
-            // 
-            // btndaychuyen
-            // 
-            this.btndaychuyen.AnimationHoverSpeed = 0.07F;
-            this.btndaychuyen.AnimationSpeed = 0.03F;
-            this.btndaychuyen.BackColor = System.Drawing.Color.Transparent;
-            this.btndaychuyen.BaseColor = System.Drawing.Color.LightCyan;
-            this.btndaychuyen.BorderColor = System.Drawing.Color.Black;
-            this.btndaychuyen.BorderSize = 1;
-            this.btndaychuyen.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btndaychuyen.CheckedBaseColor = System.Drawing.Color.BurlyWood;
-            this.btndaychuyen.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btndaychuyen.CheckedForeColor = System.Drawing.Color.White;
-            this.btndaychuyen.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btndaychuyen.CheckedImage")));
-            this.btndaychuyen.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btndaychuyen.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btndaychuyen.FocusedColor = System.Drawing.Color.Empty;
-            this.btndaychuyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndaychuyen.ForeColor = System.Drawing.Color.Black;
-            this.btndaychuyen.Image = null;
-            this.btndaychuyen.ImageOffsetX = -5;
-            this.btndaychuyen.ImageSize = new System.Drawing.Size(40, 40);
-            this.btndaychuyen.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btndaychuyen.Location = new System.Drawing.Point(33, 405);
-            this.btndaychuyen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btndaychuyen.Name = "btndaychuyen";
-            this.btndaychuyen.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
-            this.btndaychuyen.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btndaychuyen.OnHoverForeColor = System.Drawing.Color.White;
-            this.btndaychuyen.OnHoverImage = null;
-            this.btndaychuyen.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btndaychuyen.OnPressedColor = System.Drawing.Color.Black;
-            this.btndaychuyen.Radius = 20;
-            this.btndaychuyen.Size = new System.Drawing.Size(176, 52);
-            this.btndaychuyen.TabIndex = 0;
-            this.btndaychuyen.Text = "Necklace";
-            this.btndaychuyen.Visible = false;
-            this.btndaychuyen.CheckedChanged += new System.EventHandler(this.btndaychuyen_CheckedChanged);
-            // 
-            // btnvong
-            // 
-            this.btnvong.AnimationHoverSpeed = 0.07F;
-            this.btnvong.AnimationSpeed = 0.03F;
-            this.btnvong.BackColor = System.Drawing.Color.Transparent;
-            this.btnvong.BaseColor = System.Drawing.Color.SkyBlue;
-            this.btnvong.BorderColor = System.Drawing.Color.Black;
-            this.btnvong.BorderSize = 1;
-            this.btnvong.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnvong.CheckedBaseColor = System.Drawing.Color.BurlyWood;
-            this.btnvong.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnvong.CheckedForeColor = System.Drawing.Color.White;
-            this.btnvong.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnvong.CheckedImage")));
-            this.btnvong.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnvong.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnvong.FocusedColor = System.Drawing.Color.Empty;
-            this.btnvong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvong.ForeColor = System.Drawing.Color.Black;
-            this.btnvong.Image = null;
-            this.btnvong.ImageOffsetX = -5;
-            this.btnvong.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnvong.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnvong.Location = new System.Drawing.Point(33, 346);
-            this.btnvong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnvong.Name = "btnvong";
-            this.btnvong.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
-            this.btnvong.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnvong.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnvong.OnHoverImage = null;
-            this.btnvong.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnvong.OnPressedColor = System.Drawing.Color.Black;
-            this.btnvong.Radius = 20;
-            this.btnvong.Size = new System.Drawing.Size(176, 52);
-            this.btnvong.TabIndex = 0;
-            this.btnvong.Text = "Bracelet";
-            this.btnvong.Visible = false;
-            this.btnvong.CheckedChanged += new System.EventHandler(this.btnvong_CheckedChanged);
             // 
             // btnbongtai
             // 
@@ -400,7 +320,7 @@
             this.btnbongtai.ImageSize = new System.Drawing.Size(40, 40);
             this.btnbongtai.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnbongtai.Location = new System.Drawing.Point(33, 287);
-            this.btnbongtai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbongtai.Margin = new System.Windows.Forms.Padding(4);
             this.btnbongtai.Name = "btnbongtai";
             this.btnbongtai.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
             this.btnbongtai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -438,7 +358,7 @@
             this.btndongho.ImageSize = new System.Drawing.Size(40, 40);
             this.btndongho.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btndongho.Location = new System.Drawing.Point(33, 228);
-            this.btndongho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btndongho.Margin = new System.Windows.Forms.Padding(4);
             this.btndongho.Name = "btndongho";
             this.btndongho.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
             this.btndongho.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -476,7 +396,7 @@
             this.btnnhan.ImageSize = new System.Drawing.Size(40, 40);
             this.btnnhan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnnhan.Location = new System.Drawing.Point(33, 169);
-            this.btnnhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnnhan.Margin = new System.Windows.Forms.Padding(4);
             this.btnnhan.Name = "btnnhan";
             this.btnnhan.OnHoverBaseColor = System.Drawing.Color.BurlyWood;
             this.btnnhan.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -514,7 +434,7 @@
             this.btn2.ImageSize = new System.Drawing.Size(40, 40);
             this.btn2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn2.Location = new System.Drawing.Point(4, 110);
-            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
             this.btn2.OnHoverBaseColor = System.Drawing.Color.CadetBlue;
             this.btn2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -530,18 +450,18 @@
             // 
             // chart7
             // 
-            chartArea14.Name = "ChartArea1";
-            this.chart7.ChartAreas.Add(chartArea14);
-            legend14.Name = "Legend1";
-            this.chart7.Legends.Add(legend14);
+            chartArea7.Name = "ChartArea1";
+            this.chart7.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart7.Legends.Add(legend7);
             this.chart7.Location = new System.Drawing.Point(284, 287);
             this.chart7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart7.Name = "chart7";
             this.chart7.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Product";
-            this.chart7.Series.Add(series14);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Product";
+            this.chart7.Series.Add(series7);
             this.chart7.Size = new System.Drawing.Size(980, 519);
             this.chart7.TabIndex = 12;
             this.chart7.Text = "chart7";
@@ -558,7 +478,7 @@
             this.panel14.Controls.Add(this.menuStrip1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(265, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1027, 145);
             this.panel14.TabIndex = 56;
@@ -569,7 +489,7 @@
             this.guna2PictureBox4.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox4.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox4.Location = new System.Drawing.Point(985, 4);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
             this.guna2PictureBox4.Size = new System.Drawing.Size(37, 38);
@@ -585,7 +505,7 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox2.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox2.Location = new System.Drawing.Point(1075, 4);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(37, 38);
@@ -600,7 +520,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Blue;
             this.guna2PictureBox1.Image = global::TestFramework.Properties.Resources.PIC6;
             this.guna2PictureBox1.Location = new System.Drawing.Point(1240, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(37, 38);
@@ -642,8 +562,7 @@
             this.orderToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(12, 94);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(435, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(292, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -656,41 +575,41 @@
             this.salaryToolStripMenuItem,
             this.statisticToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(75, 36);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 36);
             this.toolStripMenuItem1.Text = "Staff";
             // 
             // addStaffToolStripMenuItem
             // 
             this.addStaffToolStripMenuItem.Name = "addStaffToolStripMenuItem";
-            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.addStaffToolStripMenuItem.Text = "Add Staff";
             this.addStaffToolStripMenuItem.Click += new System.EventHandler(this.addStaffToolStripMenuItem_Click);
             // 
             // detailToolStripMenuItem
             // 
             this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
-            this.detailToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.detailToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.detailToolStripMenuItem.Text = "List Staff";
             this.detailToolStripMenuItem.Click += new System.EventHandler(this.detailToolStripMenuItem_Click);
             // 
             // timekeepingToolStripMenuItem
             // 
             this.timekeepingToolStripMenuItem.Name = "timekeepingToolStripMenuItem";
-            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.timekeepingToolStripMenuItem.Text = "Timekeeping";
             this.timekeepingToolStripMenuItem.Click += new System.EventHandler(this.timekeepingToolStripMenuItem_Click);
             // 
             // salaryToolStripMenuItem
             // 
             this.salaryToolStripMenuItem.Name = "salaryToolStripMenuItem";
-            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.salaryToolStripMenuItem.Text = "Salary";
             this.salaryToolStripMenuItem.Click += new System.EventHandler(this.salaryToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem
             // 
             this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(235, 36);
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
             this.statisticToolStripMenuItem.Text = "Statistic";
             this.statisticToolStripMenuItem.Click += new System.EventHandler(this.statisticToolStripMenuItem_Click);
             // 
@@ -702,34 +621,34 @@
             this.saleToolStripMenuItem,
             this.statisticToolStripMenuItem1});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(109, 36);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
             this.productToolStripMenuItem.Text = "Product";
             // 
             // listProductsToolStripMenuItem
             // 
             this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.listProductsToolStripMenuItem.Text = "Manage Product";
             this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
             // 
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.addProductToolStripMenuItem.Text = "Add Product";
             this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
             // saleToolStripMenuItem
             // 
             this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(272, 36);
+            this.saleToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
             this.saleToolStripMenuItem.Text = "Sale";
             this.saleToolStripMenuItem.Click += new System.EventHandler(this.saleToolStripMenuItem_Click);
             // 
             // statisticToolStripMenuItem1
             // 
             this.statisticToolStripMenuItem1.Name = "statisticToolStripMenuItem1";
-            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(272, 36);
+            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(280, 36);
             this.statisticToolStripMenuItem1.Text = "Statistic";
             this.statisticToolStripMenuItem1.Click += new System.EventHandler(this.statisticToolStripMenuItem1_Click);
             // 
@@ -739,20 +658,20 @@
             this.newOrderToolStripMenuItem,
             this.manageOrderToolStripMenuItem});
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
             this.orderToolStripMenuItem.Text = "Order";
             // 
             // newOrderToolStripMenuItem
             // 
             this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
-            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.newOrderToolStripMenuItem.Text = "New Order";
             this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
             // 
             // manageOrderToolStripMenuItem
             // 
             this.manageOrderToolStripMenuItem.Name = "manageOrderToolStripMenuItem";
-            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(251, 36);
+            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
             this.manageOrderToolStripMenuItem.Text = "Manage Order";
             this.manageOrderToolStripMenuItem.Click += new System.EventHandler(this.manageOrderToolStripMenuItem_Click);
             // 
@@ -808,11 +727,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart6;
-        private Guna.UI.WinForms.GunaAdvenceButton btnvong;
         private Guna.UI.WinForms.GunaAdvenceButton btnbongtai;
         private Guna.UI.WinForms.GunaAdvenceButton btndongho;
         private Guna.UI.WinForms.GunaAdvenceButton btnnhan;
-        private Guna.UI.WinForms.GunaAdvenceButton btndaychuyen;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart7;
         private Guna.UI.WinForms.GunaAdvenceButton btn1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;

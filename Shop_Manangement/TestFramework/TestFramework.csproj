@@ -60,11 +60,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="billdataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>billdataset.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Class\CTSALES.cs" />
     <Compile Include="Class\GlobalsMaNV.cs" />
     <Compile Include="Class\GlobalsPhone.cs" />
@@ -75,36 +70,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DiamondGroupDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet6.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DiamondGroupDataSet7.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,21 +79,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DiamondGroupDataSet8.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Nvdataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Nvdataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="productDataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>productDataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="productdataset1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>productdataset1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Pro\addCus.cs">
       <SubType>Form</SubType>
@@ -209,14 +159,6 @@
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StaffDataset.cs">
-      <DependentUpon>StaffDataset.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="StaffDataset.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StaffDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Staff\AddStaff.cs">
       <SubType>Form</SubType>
@@ -336,17 +278,6 @@
     <EmbeddedResource Include="Staff\Timekeeping.resx">
       <DependentUpon>Timekeeping.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="billdataset.xsc">
-      <DependentUpon>billdataset.xsd</DependentUpon>
-    </None>
-    <None Include="billdataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>billdataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="billdataset.xss">
-      <DependentUpon>billdataset.xsd</DependentUpon>
-    </None>
     <None Include="DiamondGroupDataSet.xsc">
       <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
     </None>
@@ -357,72 +288,6 @@
     </None>
     <None Include="DiamondGroupDataSet.xss">
       <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet1.xsc">
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet1.xss">
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet2.xsc">
-      <DependentUpon>DiamondGroupDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet2.xss">
-      <DependentUpon>DiamondGroupDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet3.xsc">
-      <DependentUpon>DiamondGroupDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet3.xss">
-      <DependentUpon>DiamondGroupDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet4.xsc">
-      <DependentUpon>DiamondGroupDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet4.xss">
-      <DependentUpon>DiamondGroupDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet5.xsc">
-      <DependentUpon>DiamondGroupDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet5.xss">
-      <DependentUpon>DiamondGroupDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet6.xsc">
-      <DependentUpon>DiamondGroupDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet6.xss">
-      <DependentUpon>DiamondGroupDataSet6.xsd</DependentUpon>
     </None>
     <None Include="DiamondGroupDataSet7.xsc">
       <DependentUpon>DiamondGroupDataSet7.xsd</DependentUpon>
@@ -446,40 +311,7 @@
     <None Include="DiamondGroupDataSet8.xss">
       <DependentUpon>DiamondGroupDataSet8.xsd</DependentUpon>
     </None>
-    <None Include="Nvdataset.xsc">
-      <DependentUpon>Nvdataset.xsd</DependentUpon>
-    </None>
-    <None Include="Nvdataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Nvdataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Nvdataset.xss">
-      <DependentUpon>Nvdataset.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
-    <None Include="productDataset.xsc">
-      <DependentUpon>productDataset.xsd</DependentUpon>
-    </None>
-    <None Include="productDataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>productDataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="productDataset.xss">
-      <DependentUpon>productDataset.xsd</DependentUpon>
-    </None>
-    <None Include="productdataset1.xsc">
-      <DependentUpon>productdataset1.xsd</DependentUpon>
-    </None>
-    <None Include="productdataset1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>productdataset1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="productdataset1.xss">
-      <DependentUpon>productdataset1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -489,17 +321,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="StaffDataset.xsc">
-      <DependentUpon>StaffDataset.xsd</DependentUpon>
-    </None>
-    <None Include="StaffDataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StaffDataset.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StaffDataset.xss">
-      <DependentUpon>StaffDataset.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

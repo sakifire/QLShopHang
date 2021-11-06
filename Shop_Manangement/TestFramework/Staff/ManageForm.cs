@@ -87,15 +87,7 @@ namespace TestFramework.Staff
             FillGrid(command);
         }
 
-        private void tbsearch_MouseEnter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void tbsearch_MouseLeave(object sender, EventArgs e)
-        {
-           
-        }
+       
         
         private void gridNhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
