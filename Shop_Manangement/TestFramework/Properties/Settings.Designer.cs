@@ -54,5 +54,16 @@ namespace TestFramework.Properties {
                 return ((string)(this["DiamondGroupConnectionStringTienHM"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-8IE37FRR\\SQLEXPRESS;Initial Catalog=WatchShopGroup;Integrated " +
+            "Security=True")]
+        public string WatchShopGroupConnectionStringOder {
+            get {
+                return ((string)(this["WatchShopGroupConnectionStringOder"]));
+            }
+        }
     }
 }

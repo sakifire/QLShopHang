@@ -8,7 +8,7 @@ namespace TestFramework
 {
     class MyData
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8IE37FRR\SQLEXPRESS;Initial Catalog=DiamondGroup;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-8IE37FRR\SQLEXPRESS;Initial Catalog=WatchShopGroup;Integrated Security=True");
         public SqlConnection GetConnection
         {
             get

@@ -66,26 +66,6 @@
     <Compile Include="Class\GlobalsPhone.cs" />
     <Compile Include="Class\KH.cs" />
     <Compile Include="Class\Order.cs" />
-    <Compile Include="DiamondGroupDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet7.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DiamondGroupDataSet8.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DiamondGroupDataSet8.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Pro\addCus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +180,21 @@
     <Compile Include="Staff\Timekeeping.Designer.cs">
       <DependentUpon>Timekeeping.cs</DependentUpon>
     </Compile>
+    <Compile Include="WatchShopGroupDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WatchShopGroupDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WatchShopGroupDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WatchShopGroupDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WatchShopGroupDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WatchShopGroupDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Pro\addCus.resx">
       <DependentUpon>addCus.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,50 +259,6 @@
     <EmbeddedResource Include="Staff\Timekeeping.resx">
       <DependentUpon>Timekeeping.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DiamondGroupDataSet.xsc">
-      <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet.xss">
-      <DependentUpon>DiamondGroupDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet1.xsc">
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet1.xss">
-      <DependentUpon>DiamondGroupDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet7.xsc">
-      <DependentUpon>DiamondGroupDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet7.xss">
-      <DependentUpon>DiamondGroupDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet8.xsc">
-      <DependentUpon>DiamondGroupDataSet8.xsd</DependentUpon>
-    </None>
-    <None Include="DiamondGroupDataSet8.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DiamondGroupDataSet8.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DiamondGroupDataSet8.xss">
-      <DependentUpon>DiamondGroupDataSet8.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -318,6 +269,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WatchShopGroupDataSet.xsc">
+      <DependentUpon>WatchShopGroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WatchShopGroupDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WatchShopGroupDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WatchShopGroupDataSet.xss">
+      <DependentUpon>WatchShopGroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WatchShopGroupDataSet1.xsc">
+      <DependentUpon>WatchShopGroupDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WatchShopGroupDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WatchShopGroupDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WatchShopGroupDataSet1.xss">
+      <DependentUpon>WatchShopGroupDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WatchShopGroupDataSet2.xsc">
+      <DependentUpon>WatchShopGroupDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WatchShopGroupDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WatchShopGroupDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WatchShopGroupDataSet2.xss">
+      <DependentUpon>WatchShopGroupDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -434,12 +418,6 @@
     <None Include="Resources\browser-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Cart-add-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chat-1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\grand-sale-offer-sale-shopping-sticker-icon-264441.png" />
   </ItemGroup>
   <ItemGroup>
@@ -468,6 +446,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cart-add-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

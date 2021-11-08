@@ -83,9 +83,9 @@
             this.curnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.stateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.diamondGroupDataSet8 = new TestFramework.DiamondGroupDataSet8();
-            this.productTableAdapter = new TestFramework.DiamondGroupDataSet8TableAdapters.ProductTableAdapter();
+            this.watchShopGroupDataSet1 = new TestFramework.WatchShopGroupDataSet1();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.productTableAdapter1 = new TestFramework.WatchShopGroupDataSet1TableAdapters.ProductTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPr)).BeginInit();
@@ -93,8 +93,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diamondGroupDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.watchShopGroupDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpinput
@@ -606,7 +606,7 @@
             this.curnumberDataGridViewTextBoxColumn,
             this.dataGridViewImageColumn1,
             this.stateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.productBindingSource;
+            this.dataGridView1.DataSource = this.productBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -720,19 +720,19 @@
             this.stateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.stateDataGridViewTextBoxColumn.Name = "stateDataGridViewTextBoxColumn";
             // 
-            // productBindingSource
+            // watchShopGroupDataSet1
             // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.diamondGroupDataSet8;
+            this.watchShopGroupDataSet1.DataSetName = "WatchShopGroupDataSet1";
+            this.watchShopGroupDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // diamondGroupDataSet8
+            // productBindingSource1
             // 
-            this.diamondGroupDataSet8.DataSetName = "DiamondGroupDataSet8";
-            this.diamondGroupDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.productBindingSource1.DataMember = "Product";
+            this.productBindingSource1.DataSource = this.watchShopGroupDataSet1;
             // 
-            // productTableAdapter
+            // productTableAdapter1
             // 
-            this.productTableAdapter.ClearBeforeFill = true;
+            this.productTableAdapter1.ClearBeforeFill = true;
             // 
             // manapro
             // 
@@ -789,8 +789,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diamondGroupDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.watchShopGroupDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -847,9 +847,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
-        private DiamondGroupDataSet8 diamondGroupDataSet8;
-        private System.Windows.Forms.BindingSource productBindingSource;
-        private DiamondGroupDataSet8TableAdapters.ProductTableAdapter productTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -860,5 +857,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn curnumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn stateDataGridViewTextBoxColumn;
+        private WatchShopGroupDataSet1 watchShopGroupDataSet1;
+        private System.Windows.Forms.BindingSource productBindingSource1;
+        private WatchShopGroupDataSet1TableAdapters.ProductTableAdapter productTableAdapter1;
     }
 }

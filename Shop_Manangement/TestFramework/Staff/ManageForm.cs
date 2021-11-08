@@ -117,8 +117,10 @@ namespace TestFramework.Staff
 
         private void ManageForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'diamondGroupDataSet7.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter1.Fill(this.diamondGroupDataSet7.Staff);
+           
+            // TODO: This line of code loads data into the 'watchShopGroupDataSet2.Staff' table. You can move, or remove it, as needed.
+            this.staffTableAdapter.Fill(this.watchShopGroupDataSet2.Staff);
+           
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)

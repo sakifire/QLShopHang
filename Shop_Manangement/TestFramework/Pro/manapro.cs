@@ -26,10 +26,9 @@ namespace TestFramework.Pro
 
         private void manapro_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'diamondGroupDataSet8.Product' table. You can move, or remove it, as needed.
-            this.productTableAdapter.Fill(this.diamondGroupDataSet8.Product);
-           
-
+            // TODO: This line of code loads data into the 'watchShopGroupDataSet1.Product' table. You can move, or remove it, as needed.
+            this.productTableAdapter1.Fill(this.watchShopGroupDataSet1.Product);
+                       
             fillGrid(new SqlCommand("SELECT * FROM Product where state = 1"));
             
 

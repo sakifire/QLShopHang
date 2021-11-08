@@ -28,8 +28,8 @@ namespace TestFramework.Pro
 
         private void manaOrder_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'diamondGroupDataSet.Bill' table. You can move, or remove it, as needed.
-            this.billTableAdapter.Fill(this.diamondGroupDataSet.Bill);
+            // TODO: This line of code loads data into the 'watchShopGroupDataSet.Bill' table. You can move, or remove it, as needed.
+            this.billTableAdapter1.Fill(this.watchShopGroupDataSet.Bill);
 
         }
         private void btneditor_Click(object sender, EventArgs e)
