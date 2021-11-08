@@ -17,47 +17,10 @@ namespace TestFramework.Pro
         public SaleForm()
         {
             InitializeComponent();
+            btnedit.Enabled = false;
+            btnremove.Enabled = false;
         }
 
-        private void startd_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtsale_Click(object sender, EventArgs e)
-        {
-            txtsale.Clear();
-            label4.Visible = true;
-        }
-
-  
-
-        private void txtsale_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtsale.Text == "")
-            {
-                txtsale.Text = "Sales (%)";
-                label4.Visible = false;
-            }
-        }
-
-      
-
-       
-        private void txtname_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtname.Text == "")
-            {
-                txtname.Text = "Name";
-                label7.Visible = false;
-            }
-        }
-
-        private void txtname_Click(object sender, EventArgs e)
-        {
-            txtname.Clear();
-            label7.Visible = true;
-        }
         public void fillGrid(SqlCommand command)
         {
             dataGridView1.ReadOnly = true;
@@ -72,8 +35,26 @@ namespace TestFramework.Pro
             int id = rand.Next(0, 100);
             DateTime start = startd.Value;
             DateTime finish = finishd.Value;
-            string name = txtname.Text;
-            int sale = Convert.ToInt32(txtsale.Text);
+            string name;
+            if (txtname.Text != "" && txtname != null)
+            {
+                name = txtname.Text;
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đúng thông tin");
+                return;
+            }
+            int sale;
+            if(checkNumber(txtsale.Text))
+            {
+                sale = Convert.ToInt32(txtsale.Text);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đúng thông tin");
+                return;
+            }
 
             if (verif())
             {
@@ -82,6 +63,8 @@ namespace TestFramework.Pro
 
                     MessageBox.Show("This Sales Promotion Added", "Add new Promotion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     fillGrid(new SqlCommand("  select startdate as 'Start Day', finishdate as 'Finish Day', sales.name as 'Name', sale as 'Sale (%)' from sales"));
+                    txtname.Text = "";
+                    txtsale.Text = "";
                 }
                 else
                     MessageBox.Show("Error", "Add new Promotion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -106,8 +89,26 @@ namespace TestFramework.Pro
         {
             DateTime start = startd.Value;
             DateTime finish = finishd.Value;
-            string name = txtname.Text;
-            int sale = Convert.ToInt32(txtsale.Text);
+            string name;
+            if (txtname.Text != "" && txtname != null)
+            {
+                name = txtname.Text;
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đúng thông tin");
+                return;
+            }
+            int sale;
+            if (checkNumber(txtsale.Text))
+            {
+                sale = Convert.ToInt32(txtsale.Text);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đúng thông tin");
+                return;
+            }
             if (verif())
             {
                 if (salect.updatesale(start, finish, name, sale))
@@ -115,10 +116,13 @@ namespace TestFramework.Pro
 
                     MessageBox.Show("This Sales Promotion Edited", "Edit Promotion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     fillGrid(new SqlCommand("  select startdate as 'Start Day', finishdate as 'Finish Day', sales.name as 'Name', sale as 'Sale (%)' from sales"));
+                    btnremove.Enabled = false;
+                    btnedit.Enabled = false;
                 }
                 else
                     MessageBox.Show("Error", "Edit Promotion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
 
         private void btnremove_Click(object sender, EventArgs e)
@@ -132,6 +136,8 @@ namespace TestFramework.Pro
                     {
                         MessageBox.Show("This Promotion Deleted", "Delete Promotion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fillGrid(new SqlCommand("  select startdate as 'Start Day', finishdate as 'Finish Day', sales.name as 'Name', sale as 'Sale (%)' from sales"));
+                        btnremove.Enabled = false;
+                        btnedit.Enabled = false;
                     }
                     else
                         MessageBox.Show("Error", "Delete Promotion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -153,6 +159,8 @@ namespace TestFramework.Pro
 
             label4.Visible = true;
             label7.Visible = true;
+            btnedit.Enabled = true;
+            btnremove.Enabled = true;
         }
 
         private void guna2PictureBox3_Click(object sender, EventArgs e)
@@ -161,99 +169,35 @@ namespace TestFramework.Pro
             mana.ShowDialog();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void addStaffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.AddStaff newstaff = new Staff.AddStaff();
-            newstaff.Show();
-            this.Close();
-        }
-
-        private void detailToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.ManageForm newma = new Staff.ManageForm();
-            newma.Show();
-            this.Close();
-        }
-
-        private void timekeepingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Timekeeping timekeeping = new Staff.Timekeeping();
-            timekeeping.Show();
-            this.Close();
-        }
-
-        private void salaryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Salary sal = new Staff.Salary();
-            sal.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.StatisticStaff stastaff = new Staff.StatisticStaff();
-            stastaff.Show();
-            this.Close();
-        }
-
-        private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manapro manapro = new Pro.manapro();
-            manapro.Show();
-            this.Close();
-        }
-
-        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            addnewProduct newpro = new addnewProduct();
-            newpro.Show();
-            this.Close();
-        }
-
-        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order neworder = new Pro.order();
-            neworder.Show();
-            this.Close();
-        }
-
-        private void saleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.SaleForm newsale = new Pro.SaleForm();
-            newsale.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Pro.Statistic sta = new Pro.Statistic();
-            sta.Show();
-            this.Close();
-        }
-
         private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        #region logic function
+      
+        public bool IsNumber(string pValue)
         {
-            Pro.order ord = new order();
-            ord.Show();
-            this.Close();
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
+        }
+        bool checkNumber(string text)
+        {
+            if (text != "" && IsNumber(text))
+            {
+                return true;
+            }
+            else return false;
         }
 
-        private void manageOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manaOrder manaord = new manaOrder();
-            manaord.Show();
-            this.Close();
-        }
+
+
+        #endregion logic function
+
     }
 }
 

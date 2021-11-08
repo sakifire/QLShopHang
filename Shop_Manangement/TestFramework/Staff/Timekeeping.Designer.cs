@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtchamcong = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cbname = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -42,33 +42,15 @@
             this.rbgiora = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbgiovao = new Guna.UI2.WinForms.Guna2RadioButton();
             this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.exitbtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStaffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timekeepingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statisticToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -254,30 +236,30 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(8, 69);
@@ -311,29 +293,12 @@
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.Blue;
-            this.guna2PictureBox3.Image = global::TestFramework.Properties.Resources.pic7;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(0, 784);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(37, 38);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 40;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
-            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Azure;
-            this.panel14.Controls.Add(this.guna2PictureBox1);
+            this.panel14.Controls.Add(this.exitbtn);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.label8);
-            this.panel14.Controls.Add(this.menuStrip1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(4);
@@ -341,21 +306,21 @@
             this.panel14.Size = new System.Drawing.Size(1292, 145);
             this.panel14.TabIndex = 57;
             // 
-            // guna2PictureBox1
+            // exitbtn
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Blue;
-            this.guna2PictureBox1.Image = global::TestFramework.Properties.Resources.PIC6;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1240, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(37, 38);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 38;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
+            this.exitbtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitbtn.FillColor = System.Drawing.Color.Blue;
+            this.exitbtn.Image = global::TestFramework.Properties.Resources.PIC6;
+            this.exitbtn.Location = new System.Drawing.Point(1240, 4);
+            this.exitbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.ShadowDecoration.Parent = this.exitbtn;
+            this.exitbtn.Size = new System.Drawing.Size(37, 38);
+            this.exitbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exitbtn.TabIndex = 38;
+            this.exitbtn.TabStop = false;
+            this.exitbtn.UseTransparentBackground = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
             // panel15
             // 
@@ -377,133 +342,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Jelwery";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.productToolStripMenuItem,
-            this.orderToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(12, 94);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(292, 40);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addStaffToolStripMenuItem,
-            this.detailToolStripMenuItem,
-            this.timekeepingToolStripMenuItem,
-            this.salaryToolStripMenuItem,
-            this.statisticToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 36);
-            this.toolStripMenuItem1.Text = "Staff";
-            // 
-            // addStaffToolStripMenuItem
-            // 
-            this.addStaffToolStripMenuItem.Name = "addStaffToolStripMenuItem";
-            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.addStaffToolStripMenuItem.Text = "Add Staff";
-            this.addStaffToolStripMenuItem.Click += new System.EventHandler(this.addStaffToolStripMenuItem_Click);
-            // 
-            // detailToolStripMenuItem
-            // 
-            this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
-            this.detailToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.detailToolStripMenuItem.Text = "List Staff";
-            this.detailToolStripMenuItem.Click += new System.EventHandler(this.detailToolStripMenuItem_Click);
-            // 
-            // timekeepingToolStripMenuItem
-            // 
-            this.timekeepingToolStripMenuItem.Name = "timekeepingToolStripMenuItem";
-            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.timekeepingToolStripMenuItem.Text = "Timekeeping";
-            this.timekeepingToolStripMenuItem.Click += new System.EventHandler(this.timekeepingToolStripMenuItem_Click);
-            // 
-            // salaryToolStripMenuItem
-            // 
-            this.salaryToolStripMenuItem.Name = "salaryToolStripMenuItem";
-            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.salaryToolStripMenuItem.Text = "Salary";
-            this.salaryToolStripMenuItem.Click += new System.EventHandler(this.salaryToolStripMenuItem_Click);
-            // 
-            // statisticToolStripMenuItem
-            // 
-            this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.statisticToolStripMenuItem.Text = "Statistic";
-            this.statisticToolStripMenuItem.Click += new System.EventHandler(this.statisticToolStripMenuItem_Click);
-            // 
-            // productToolStripMenuItem
-            // 
-            this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listProductsToolStripMenuItem,
-            this.addProductToolStripMenuItem,
-            this.saleToolStripMenuItem,
-            this.statisticToolStripMenuItem1});
-            this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
-            this.productToolStripMenuItem.Text = "Product";
-            // 
-            // listProductsToolStripMenuItem
-            // 
-            this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.listProductsToolStripMenuItem.Text = "Manage Product";
-            this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
-            // 
-            // addProductToolStripMenuItem
-            // 
-            this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.addProductToolStripMenuItem.Text = "Add Product";
-            this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
-            // 
-            // saleToolStripMenuItem
-            // 
-            this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.saleToolStripMenuItem.Text = "Sale";
-            this.saleToolStripMenuItem.Click += new System.EventHandler(this.saleToolStripMenuItem_Click);
-            // 
-            // statisticToolStripMenuItem1
-            // 
-            this.statisticToolStripMenuItem1.Name = "statisticToolStripMenuItem1";
-            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(280, 36);
-            this.statisticToolStripMenuItem1.Text = "Statistic";
-            this.statisticToolStripMenuItem1.Click += new System.EventHandler(this.statisticToolStripMenuItem1_Click);
-            // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newOrderToolStripMenuItem,
-            this.manageOrderToolStripMenuItem});
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
-            this.orderToolStripMenuItem.Text = "Order";
-            // 
-            // newOrderToolStripMenuItem
-            // 
-            this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
-            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
-            this.newOrderToolStripMenuItem.Text = "New Order";
-            this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
-            // 
-            // manageOrderToolStripMenuItem
-            // 
-            this.manageOrderToolStripMenuItem.Name = "manageOrderToolStripMenuItem";
-            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
-            this.manageOrderToolStripMenuItem.Text = "Manage Order";
-            this.manageOrderToolStripMenuItem.Click += new System.EventHandler(this.manageOrderToolStripMenuItem_Click);
-            // 
             // Timekeeping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -512,7 +350,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1292, 825);
             this.Controls.Add(this.panel14);
-            this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -526,12 +363,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitbtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -549,25 +383,9 @@
         private Guna.UI2.WinForms.Guna2RadioButton rbgiovao;
         private Guna.UI2.WinForms.Guna2Button bttable;
         private Guna.UI2.WinForms.Guna2Button btconfirm;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Panel panel14;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox exitbtn;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem addStaffToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem detailToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timekeepingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salaryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listProductsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newOrderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageOrderToolStripMenuItem;
     }
 }

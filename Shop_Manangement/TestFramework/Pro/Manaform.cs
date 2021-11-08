@@ -43,97 +43,9 @@ namespace TestFramework.Pro
         }
         private void Manaform_Load(object sender, EventArgs e)
         {
-            //panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
-            getImageAndUsername();
-            timer2.Start();
-            
-
-
+            getImageAndUsername();            
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (rbtren.Checked == true)
-            {
-
-                ProgressBar1.Increment(10);
-                ProgressBar2.Increment(10);
-                ProgressBar3.Increment(10);
-                ProgressBar4.Increment(10);
-                ProgressBar5.Increment(10);
-                ProgressBar6.Increment(10);
-                //rbduoi.Checked = true;
-            }
-            else
-            {
-                ProgressBar1.Increment(10);
-                ProgressBar2.Increment(10);
-                ProgressBar3.Increment(10);
-                ProgressBar4.Increment(10);
-                ProgressBar5.Increment(10);
-                ProgressBar6.Increment(10);
-                rbtren.Checked = true;
-
-            }
-            
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            if (rbtren.Checked == true)
-            {
-                //ProgressBar1.Increment(1);
-                //ProgressBar2.Increment(1);
-                //ProgressBar3.Increment(1);
-                //ProgressBar4.Increment(1);
-                //ProgressBar5.Increment(1);
-                //ProgressBar6.Increment(1);
-                //rbduoi.Checked = true;
-                ProgressBar1.Value = 0;
-                ProgressBar2.Value = 0;
-                ProgressBar3.Value = 0;
-                ProgressBar4.Value = 0;
-                ProgressBar5.Value = 0;
-                ProgressBar6.Value = 0;
-            }
-            else
-            {
-                //ProgressBar1.Increment(1);
-                //ProgressBar2.Increment(1);
-                //ProgressBar3.Increment(1);
-                //ProgressBar4.Increment(1);
-                //ProgressBar5.Increment(1);
-                //ProgressBar6.Increment(1);
-                //rbduoi.Checked = true;
-                ProgressBar1.Value = 0;
-                ProgressBar2.Value = 0;
-                ProgressBar3.Value = 0;
-                ProgressBar4.Value = 0;
-                ProgressBar5.Value = 0;
-                ProgressBar6.Value = 0;
-            }
-            timer1.Start();
-        }
-
-        private void rbtren_CheckedChanged(object sender, EventArgs e)
-        {
-        //    ProgressBar1.Increment(20);
-        //    ProgressBar2.Increment(20);
-        //    ProgressBar3.Increment(20);
-        //    ProgressBar4.Increment(20);
-        //    ProgressBar5.Increment(20);
-        //    ProgressBar6.Increment(20);
-        }
-
-        private void rbduoi_CheckedChanged(object sender, EventArgs e)
-        {
-            //ProgressBar1.Increment(20);
-            //ProgressBar2.Increment(20);
-            //ProgressBar3.Increment(20);
-            //ProgressBar4.Increment(20);
-            //ProgressBar5.Increment(20);
-            //ProgressBar6.Increment(20);
-        }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -190,16 +102,6 @@ namespace TestFramework.Pro
             
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Salary sal = new Salary();
-            sal.ShowDialog();
-        }
-
-        private void avatar_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void lblname_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

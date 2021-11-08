@@ -32,7 +32,7 @@
             this.comboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpinput = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtprice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.add_btn = new Guna.UI2.WinForms.Guna2Button();
             this.btnpic = new Guna.UI2.WinForms.Guna2Button();
             this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtamount = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,30 +48,14 @@
             this.lbid = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.exit_picture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStaffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timekeepingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statisticToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
@@ -80,7 +64,7 @@
             this.guna2Panel2.Controls.Add(this.comboBox1);
             this.guna2Panel2.Controls.Add(this.dtpinput);
             this.guna2Panel2.Controls.Add(this.txtprice);
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
+            this.guna2Panel2.Controls.Add(this.add_btn);
             this.guna2Panel2.Controls.Add(this.btnpic);
             this.guna2Panel2.Controls.Add(this.pic);
             this.guna2Panel2.Controls.Add(this.txtamount);
@@ -173,26 +157,26 @@
             this.txtprice.Size = new System.Drawing.Size(339, 44);
             this.txtprice.TabIndex = 38;
             // 
-            // guna2Button1
+            // add_btn
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Azure;
-            this.guna2Button1.BorderColor = System.Drawing.Color.DarkCyan;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.LightCyan;
-            this.guna2Button1.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(691, 553);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(311, 55);
-            this.guna2Button1.TabIndex = 36;
-            this.guna2Button1.Text = "ADD";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.add_btn.Animated = true;
+            this.add_btn.BackColor = System.Drawing.Color.Azure;
+            this.add_btn.BorderColor = System.Drawing.Color.DarkCyan;
+            this.add_btn.BorderThickness = 2;
+            this.add_btn.CheckedState.Parent = this.add_btn;
+            this.add_btn.CustomImages.Parent = this.add_btn;
+            this.add_btn.FillColor = System.Drawing.Color.LightCyan;
+            this.add_btn.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold);
+            this.add_btn.ForeColor = System.Drawing.Color.DimGray;
+            this.add_btn.HoverState.Parent = this.add_btn;
+            this.add_btn.Location = new System.Drawing.Point(691, 553);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.ShadowDecoration.Parent = this.add_btn;
+            this.add_btn.Size = new System.Drawing.Size(311, 55);
+            this.add_btn.TabIndex = 36;
+            this.add_btn.Text = "ADD";
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // btnpic
             // 
@@ -414,7 +398,6 @@
             this.lbid.Size = new System.Drawing.Size(132, 28);
             this.lbid.TabIndex = 18;
             this.lbid.Text = "Product  ID";
-            this.lbid.Click += new System.EventHandler(this.lbid_Click);
             // 
             // guna2PictureBox1
             // 
@@ -430,15 +413,13 @@
             this.guna2PictureBox1.TabIndex = 37;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Azure;
-            this.panel14.Controls.Add(this.guna2PictureBox3);
+            this.panel14.Controls.Add(this.exit_picture);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.label8);
-            this.panel14.Controls.Add(this.menuStrip1);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(4);
@@ -446,21 +427,21 @@
             this.panel14.Size = new System.Drawing.Size(1185, 145);
             this.panel14.TabIndex = 40;
             // 
-            // guna2PictureBox3
+            // exit_picture
             // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.Blue;
-            this.guna2PictureBox3.Image = global::TestFramework.Properties.Resources.PIC6;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(1144, 4);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(37, 38);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 38;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
+            this.exit_picture.BackColor = System.Drawing.Color.Transparent;
+            this.exit_picture.FillColor = System.Drawing.Color.Blue;
+            this.exit_picture.Image = global::TestFramework.Properties.Resources.PIC6;
+            this.exit_picture.Location = new System.Drawing.Point(1144, 4);
+            this.exit_picture.Margin = new System.Windows.Forms.Padding(4);
+            this.exit_picture.Name = "exit_picture";
+            this.exit_picture.ShadowDecoration.Parent = this.exit_picture;
+            this.exit_picture.Size = new System.Drawing.Size(37, 38);
+            this.exit_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exit_picture.TabIndex = 38;
+            this.exit_picture.TabStop = false;
+            this.exit_picture.UseTransparentBackground = true;
+            this.exit_picture.Click += new System.EventHandler(this.exit_picture_Click);
             // 
             // panel15
             // 
@@ -481,133 +462,6 @@
             this.label8.Size = new System.Drawing.Size(371, 104);
             this.label8.TabIndex = 0;
             this.label8.Text = "Jelwery";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.productToolStripMenuItem,
-            this.orderToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(12, 94);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(292, 40);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addStaffToolStripMenuItem,
-            this.detailToolStripMenuItem,
-            this.timekeepingToolStripMenuItem,
-            this.salaryToolStripMenuItem,
-            this.statisticToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(77, 36);
-            this.toolStripMenuItem1.Text = "Staff";
-            // 
-            // addStaffToolStripMenuItem
-            // 
-            this.addStaffToolStripMenuItem.Name = "addStaffToolStripMenuItem";
-            this.addStaffToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.addStaffToolStripMenuItem.Text = "Add Staff";
-            this.addStaffToolStripMenuItem.Click += new System.EventHandler(this.addStaffToolStripMenuItem_Click);
-            // 
-            // detailToolStripMenuItem
-            // 
-            this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
-            this.detailToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.detailToolStripMenuItem.Text = "List Staff";
-            this.detailToolStripMenuItem.Click += new System.EventHandler(this.detailToolStripMenuItem_Click);
-            // 
-            // timekeepingToolStripMenuItem
-            // 
-            this.timekeepingToolStripMenuItem.Name = "timekeepingToolStripMenuItem";
-            this.timekeepingToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.timekeepingToolStripMenuItem.Text = "Timekeeping";
-            this.timekeepingToolStripMenuItem.Click += new System.EventHandler(this.timekeepingToolStripMenuItem_Click);
-            // 
-            // salaryToolStripMenuItem
-            // 
-            this.salaryToolStripMenuItem.Name = "salaryToolStripMenuItem";
-            this.salaryToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.salaryToolStripMenuItem.Text = "Salary";
-            this.salaryToolStripMenuItem.Click += new System.EventHandler(this.salaryToolStripMenuItem_Click);
-            // 
-            // statisticToolStripMenuItem
-            // 
-            this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
-            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
-            this.statisticToolStripMenuItem.Text = "Statistic";
-            this.statisticToolStripMenuItem.Click += new System.EventHandler(this.statisticToolStripMenuItem_Click);
-            // 
-            // productToolStripMenuItem
-            // 
-            this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listProductsToolStripMenuItem,
-            this.addProductToolStripMenuItem,
-            this.saleToolStripMenuItem,
-            this.statisticToolStripMenuItem1});
-            this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
-            this.productToolStripMenuItem.Text = "Product";
-            // 
-            // listProductsToolStripMenuItem
-            // 
-            this.listProductsToolStripMenuItem.Name = "listProductsToolStripMenuItem";
-            this.listProductsToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.listProductsToolStripMenuItem.Text = "Manage Product";
-            this.listProductsToolStripMenuItem.Click += new System.EventHandler(this.listProductsToolStripMenuItem_Click);
-            // 
-            // addProductToolStripMenuItem
-            // 
-            this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.addProductToolStripMenuItem.Text = "Add Product";
-            this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
-            // 
-            // saleToolStripMenuItem
-            // 
-            this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(280, 36);
-            this.saleToolStripMenuItem.Text = "Sale";
-            this.saleToolStripMenuItem.Click += new System.EventHandler(this.saleToolStripMenuItem_Click);
-            // 
-            // statisticToolStripMenuItem1
-            // 
-            this.statisticToolStripMenuItem1.Name = "statisticToolStripMenuItem1";
-            this.statisticToolStripMenuItem1.Size = new System.Drawing.Size(280, 36);
-            this.statisticToolStripMenuItem1.Text = "Statistic";
-            this.statisticToolStripMenuItem1.Click += new System.EventHandler(this.statisticToolStripMenuItem1_Click);
-            // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newOrderToolStripMenuItem,
-            this.manageOrderToolStripMenuItem});
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
-            this.orderToolStripMenuItem.Text = "Order";
-            // 
-            // newOrderToolStripMenuItem
-            // 
-            this.newOrderToolStripMenuItem.Name = "newOrderToolStripMenuItem";
-            this.newOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
-            this.newOrderToolStripMenuItem.Text = "New Order";
-            this.newOrderToolStripMenuItem.Click += new System.EventHandler(this.newOrderToolStripMenuItem_Click);
-            // 
-            // manageOrderToolStripMenuItem
-            // 
-            this.manageOrderToolStripMenuItem.Name = "manageOrderToolStripMenuItem";
-            this.manageOrderToolStripMenuItem.Size = new System.Drawing.Size(259, 36);
-            this.manageOrderToolStripMenuItem.Text = "Manage Order";
-            this.manageOrderToolStripMenuItem.Click += new System.EventHandler(this.manageOrderToolStripMenuItem_Click);
             // 
             // addnewProduct
             // 
@@ -630,9 +484,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -653,7 +505,7 @@
         private System.Windows.Forms.Label lbtype;
         private System.Windows.Forms.Label lbname;
         private System.Windows.Forms.Label lbid;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button add_btn;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ComboBox comboBox1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpinput;
@@ -661,21 +513,6 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem addStaffToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem detailToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timekeepingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salaryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listProductsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newOrderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageOrderToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2PictureBox exit_picture;
     }
 }

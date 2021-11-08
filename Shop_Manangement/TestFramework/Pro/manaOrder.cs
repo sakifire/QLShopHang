@@ -21,7 +21,10 @@ namespace TestFramework.Pro
         public manaOrder()
         {
             InitializeComponent();
+            btneditor.Enabled = false;
+            btnremoveor.Enabled = false;
         }
+        Order order = new Order();
 
         private void manaOrder_Load(object sender, EventArgs e)
         {
@@ -29,38 +32,56 @@ namespace TestFramework.Pro
             this.billTableAdapter.Fill(this.diamondGroupDataSet.Bill);
 
         }
-        Order order = new Order();
         private void btneditor_Click(object sender, EventArgs e)
         {
-
-           
-                int id;
-                int phone = Convert.ToInt32(txtphoneor.Text);
-                string product = txtproductor.Text;
-                int amount = Convert.ToInt32(txtamountor.Text);
-                int price = Convert.ToInt32(txtpriceor.Text);
-                int total = Convert.ToInt32(txttotalor.Text);
-                DateTime date = datetimeor.Value;
-                int sale = Convert.ToInt32(txtsaleor.Text);
-                int manv = GlobalsMaNV.GlobalMaNV;
-                try
-                {
-                    id = Convert.ToInt32(txtidor.Text);
+            #region check logic
+            int id, phone, amount, price, total, sale;
+            if(checkNumber(txtidor.Text)
+                && checkNumber(txtphoneor.Text)
+                && checkNumber(txtamountor.Text)
+                && checkNumber(txtpriceor.Text)
+                && checkNumber(txttotalor.Text)
+                && checkNumber(txtsaleor.Text))
+            {
+                id = Convert.ToInt32(txtidor.Text);
+                phone = Convert.ToInt32(txtphoneor.Text);
+                amount = Convert.ToInt32(txtamountor.Text);
+                price = Convert.ToInt32(txtpriceor.Text);
+                total = Convert.ToInt32(txttotalor.Text);
+                sale = Convert.ToInt32(txtsaleor.Text);
+            }
+            else 
+            {
+                MessageBox.Show("Xin vui lòng nhập đúng định dạng");
+                return;
+            }
+            
+            DateTime date = datetimeor.Value;
+            int manv = GlobalsMaNV.GlobalMaNV;
+            string product;
+            if(txtproductor.Text != null && txtproductor.Text != "")
+            {
+                product = txtproductor.Text;
+            }
+            else
+            {
+                MessageBox.Show("Xin vui lòng nhập đúng định dạng");
+                return;
+            }
+            #endregion 
+            try
+            {
                     if (order.editbill(id, phone, amount, product, price, total, date, sale, manv))
                     {
                         MessageBox.Show("This Order Edited", "Manage Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fillGridOr(new SqlCommand("select * from Bill"));
-
+                        btnremoveor.Enabled = false;
+                        btneditor.Enabled = false;
                     }
                     else
                     {
                         MessageBox.Show("Error", "Manage Order", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
-
-
-
-
                 }
                 catch (Exception ex)
                 {
@@ -76,7 +97,14 @@ namespace TestFramework.Pro
         }
         private void btnremoveor_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtidor.Text);
+            int id;
+            if (checkNumber(txtidor.Text))
+            { id = Convert.ToInt32(txtidor.Text); }
+            else
+            {
+                MessageBox.Show("ID sản phẩm chưa có");
+                return;
+            }
             if (MessageBox.Show("Are you sure you want to remove this order ?", "Manage Order", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (order.delteBill(id))
@@ -98,6 +126,8 @@ namespace TestFramework.Pro
                     txtpriceor.Text = "Price";
                     txttotalor.Text = "Total";
                     txtsaleor.Text = "Sales";
+                    btnremoveor.Enabled = false;
+                    btneditor.Enabled = false;
                 }
                 else MessageBox.Show("Error", "Manage Order", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
@@ -151,137 +181,28 @@ namespace TestFramework.Pro
             else
                 MessageBox.Show("Data Not Saved", "Print Form", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-
-        private void txtidor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtidor.Text == "")
-            {
-                lbelidor.Visible = false;
-                txtidor.Text = "ID";
-            }
-        }
-
-        private void txtidor_Click(object sender, EventArgs e)
-        {
-            txtidor.Clear();
-            lbelidor.Visible = true;
-        }
-
-       
      
-        private void txtphoneor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtphoneor.Text == "")
-            {
-                lblphoneor.Visible = false;
-                txtphoneor.Text = "Phone";
-            }
-        }
-
-        private void txtphoneor_Click(object sender, EventArgs e)
-        {
-            txtphoneor.Clear();
-            lblphoneor.Visible = true;
-        }
-
-        private void txtproductor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtproductor.Text == "")
-            {
-                lbelproductor.Visible = false;
-                txtproductor.Text = "Name Product";
-            }
-        }
-
-        private void txtproductor_Click(object sender, EventArgs e)
-        {
-            txtproductor.Clear();
-            lbelproductor.Visible = true;
-        }
-
-        private void txtamountor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtamountor.Text == "")
-            {
-                lblamountor.Visible = false;
-                txtamountor.Text = "Amount";
-            }
-        }
-
-        private void txtpriceor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtpriceor.Text == "")
-            {
-                lblpriceor.Visible = false;
-                txtpriceor.Text = "Price";
-            }
-        }
-
-        private void txtsaleor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtsaleor.Text == "")
-            {
-                lblsaleor.Visible = false;
-                txtsaleor.Text = "Sales";
-            }
-        }
-
-        private void txttotalor_MouseLeave(object sender, EventArgs e)
-        {
-            if (txttotalor.Text == "")
-            {
-                lbltotalor.Visible = false;
-                txttotalor.Text = "Total";
-            }
-        }
-
-        private void txtamountor_Click(object sender, EventArgs e)
-        {
-            txtamountor.Clear();
-            lblamountor.Visible = true;
-        }
-
-        private void txtpriceor_Click(object sender, EventArgs e)
-        {
-            txtpriceor.Clear();
-            lblpriceor.Visible = true;
-        }
-
         private void txtsaleor_ClientSizeChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void txtsaleor_Click(object sender, EventArgs e)
-        {
-            txtsaleor.Clear();
-            lblsaleor.Visible = true;
-        }
-
-        private void txttotalor_Click(object sender, EventArgs e)
-        {
-            txttotalor.Clear();
-            lbltotalor.Visible = true;
-        }
-
         private void data_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            lbelidor.Visible = true;
-          
-            lbelproductor.Visible = true;
-         
+            btneditor.Enabled = true;
+            btnremoveor.Enabled = true;
+            lbelidor.Visible = true;         
+            lbelproductor.Visible = true;         
             lblamountor.Visible = true;
             lblphoneor.Visible = true;
             lblsaleor.Visible = true;
             lblpriceor.Visible = true;
             lbltotalor.Visible = true;
-            txtidor.Text = data.CurrentRow.Cells[0].Value.ToString();
-         
+            txtidor.Text = data.CurrentRow.Cells[0].Value.ToString();        
             txtphoneor.Text = data.CurrentRow.Cells[1].Value.ToString();
             txtproductor.Text = data.CurrentRow.Cells[3].Value.ToString();
             txtamountor.Text = data.CurrentRow.Cells[2].Value.ToString();
             txtpriceor.Text = data.CurrentRow.Cells[4].Value.ToString();
-
             txttotalor.Text = data.CurrentRow.Cells[5].Value.ToString();
             datetimeor.Value = (DateTime)data.CurrentRow.Cells[6].Value;
             txtsaleor.Text = data.CurrentRow.Cells[7].Value.ToString();
@@ -292,18 +213,24 @@ namespace TestFramework.Pro
             this.Close();
         }
 
-        private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        #region logic function      
+        public bool IsNumber(string pValue)
         {
-            order ord = new order();
-            ord.Show();
-            this.Close();
+            foreach (Char c in pValue)
+            {
+                if (!Char.IsDigit(c))
+                    return false;
+            }
+            return true;
         }
-
-        private void manageOderToolStripMenuItem_Click(object sender, EventArgs e)
+        bool checkNumber(string text)
         {
-            manaOrder manaord = new manaOrder();
-            manaord.Show();
-            this.Close();
+            if (text != "" && IsNumber(text))
+            {
+                return true;
+            }
+            else return false;
         }
+        #endregion logic function
     }
 }

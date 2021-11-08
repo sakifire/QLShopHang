@@ -59,32 +59,7 @@ namespace TestFramework.Pro
             else if (svf.ShowDialog() == DialogResult.OK)
                 pctPr.Image.Save((svf.FileName + ("." + ImageFormat.Jpeg.ToString())));
         }
-
        
-        private void txtms_Click(object sender, EventArgs e)
-        {
-            txtms.Clear();
-            label1.Visible = true;
-        }
-
-        private void txtname_Click(object sender, EventArgs e)
-        {
-            txtname.Clear();
-            label2.Visible = true;
-        }
-
-        private void txtprice_Click(object sender, EventArgs e)
-        {
-            txtprice.Clear();
-            label3.Visible = true;
-        }
-
-        private void txtdes_Click(object sender, EventArgs e)
-        {
-            txtdes.Clear();
-            label4.Visible = true;
-        }
-
         private void comboBox1_MouseLeave(object sender, EventArgs e)
         {
             if (comboBox1.Text == "")
@@ -93,56 +68,6 @@ namespace TestFramework.Pro
             }
         }
 
-        private void txtms_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtms.Text == "")
-            {
-                label1.Visible = false;
-                txtms.Text = "";
-            }
-        }
-
-        private void txtname_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtname.Text == "")
-            {
-                label2.Visible = false;
-                txtname.Text = "";
-            }
-        }
-
-        private void txtprice_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtprice.Text == "")
-            {
-                label3.Visible = false;
-                txtprice.Text = "";
-            }
-        }
-
-        private void txtdes_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtdes.Text == "")
-            {
-                label4.Visible = false;
-                txtdes.Text = "";
-            }
-        }
-
-        private void txtSL_Click(object sender, EventArgs e)
-        {
-            txtSL.Clear();
-            label8.Visible = true;
-        }
-
-        private void txtSL_MouseLeave(object sender, EventArgs e)
-        {
-            if (txtSL.Text == "")
-            {
-                label8.Visible = false;
-                txtSL.Text = "";
-            }
-        }
         PRODUCT product = new PRODUCT();
         
         public void fillGrid(SqlCommand command)
@@ -156,21 +81,14 @@ namespace TestFramework.Pro
             dataGridView1.AllowUserToAddRows = false;
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btn_search_Click(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Product WHERE CONCAT(id,name,type,price) LIKE N'%" + txtfind.Text + "%'");
             fillGrid(command);
         }
 
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e)
         {
-            Pro.Manaform mana = new Manaform();
-            mana.ShowDialog();
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-
             this.Close();
         }
 
@@ -354,42 +272,6 @@ namespace TestFramework.Pro
             }
         }
 
-        private void addStaffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.AddStaff newstaff = new Staff.AddStaff();
-            newstaff.Show();
-            this.Close();
-
-        }
-
-        private void detailToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.ManageForm newma = new Staff.ManageForm();
-            newma.Show();
-            this.Close();
-        }
-
-        private void timekeepingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Timekeeping timekeeping = new Staff.Timekeeping();
-            timekeeping.Show();
-            this.Close();
-        }
-
-        private void salaryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Salary sal = new Staff.Salary();
-            sal.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.StatisticStaff stastaff = new Staff.StatisticStaff();
-            stastaff.Show();
-            this.Close();
-        }
-
         private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Pro.manapro manapro = new Pro.manapro();
@@ -401,27 +283,6 @@ namespace TestFramework.Pro
         {
             addnewProduct newpro = new addnewProduct();
             newpro.Show();
-            this.Close();
-        }
-
-        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order neworder = new Pro.order();
-            neworder.Show();
-            this.Close();
-        }
-
-        private void saleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.SaleForm newsale = new Pro.SaleForm();
-            newsale.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Pro.Statistic sta = new Pro.Statistic();
-            sta.Show();
             this.Close();
         }
 
@@ -453,19 +314,6 @@ namespace TestFramework.Pro
             btnRemove.Enabled = true;
         }
 
-        private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order ord = new order();
-            ord.Show();
-            this.Close();
-        }
-
-        private void manageOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manaOrder manaord = new manaOrder();
-            manaord.Show();
-            this.Close();
-        }
         
         #region logic function
         public bool IsNumber(string pValue)
@@ -485,6 +333,9 @@ namespace TestFramework.Pro
             }
             else return false;
         }
+
         #endregion
+
+
     }
 }

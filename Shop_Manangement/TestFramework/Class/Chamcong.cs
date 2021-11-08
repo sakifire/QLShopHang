@@ -12,16 +12,7 @@ namespace TestFramework.Class
     {
         MyData mydb = new MyData();
 
-        public DataTable LoadCCngay(DateTime ngay)
-        {
-            SqlCommand command = new SqlCommand();
-            command.Connection = mydb.GetConnection;
-            command.CommandText = ("select id as EmployeeID, currstate as Status,checkin as Checkin, checkout as Checkout from Timekeeping WHERE Timedate='" + ngay + "'");
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            return table;
-        }
+
         public DataTable LoadCCthang(int thang, int manv)
         {
             SqlCommand command = new SqlCommand();
@@ -33,17 +24,7 @@ namespace TestFramework.Class
             return table;
 
         }
-        public DataTable Laysongaycong(DateTime ngaylam, int manv)
-        {
-            SqlCommand command = new SqlCommand();
-            command.Connection = mydb.GetConnection;
-            command.CommandText = ("select id as ID, checkin, CONVERT(time,checkin) as checkin, checkout,CONVERT(time,checkout) as checkout from Timekeeping where Timedate='" + ngaylam + "' and id=" + manv);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            return table;
 
-        }
 
         public bool ktcheckin(DateTime ngaylam, int manv)
         {
@@ -84,8 +65,7 @@ namespace TestFramework.Class
             }
 
         }
-        
-
+  
         public bool checkin(DateTime ngaylam, int manv, string trangthai, DateTime checkin)
         {
             SqlCommand command = new SqlCommand("INSERT INTO Timekeeping (Timedate, id, currstate, checkin) VALUES (@ngaylam, @manv, @trangthai, @checkin)", mydb.GetConnection);
@@ -106,28 +86,6 @@ namespace TestFramework.Class
                 return false;
             }
         }
-        public bool insertchamcong(DateTime ngaylam, int manv, string trangthai, DateTime checkin)
-        {
-            SqlCommand command = new SqlCommand("INSERT into Timekeeping(Timedate, id, currstate, checkin) values (@ngaylam, @manv, @trangthai, @checkin)", mydb.GetConnection);
-            command.Parameters.Add("@ngaylam", SqlDbType.DateTime).Value = ngaylam;
-            command.Parameters.Add("@manv", SqlDbType.Int).Value = manv;
-            command.Parameters.Add("@trangthai", SqlDbType.Char).Value = trangthai;
-            command.Parameters.Add("@checkin", SqlDbType.DateTime).Value = checkin;
-            //command.Parameters.Add("@checkout", SqlDbType.DateTime).Value = checkout;
-
-            mydb.openConnection();
-            if ((command.ExecuteNonQuery() == 1))
-            {
-                mydb.closeConnection();
-                return true;
-            }
-            else
-            {
-                mydb.closeConnection();
-                return false;
-            }
-        }
-
 
         public bool insertchamcongA(DateTime ngaylam, int manv, string trangthai)
         {
@@ -166,38 +124,7 @@ namespace TestFramework.Class
                 return false;
             }
         }
-        
-
-
-
-
-        string execCount(string query)
-        {
-            mydb.openConnection();
-            SqlCommand command = new SqlCommand(query, mydb.GetConnection);
-            String count = command.ExecuteScalar().ToString();
-            mydb.closeConnection();
-            return count;
-        }
-
-        public bool checkCC(DateTime ngaylam, int manv)
-        {
-            SqlCommand command = new SqlCommand("SELECT * FROM Timekeeping WHERE Timedate=@ngaylam and id=@manv ", mydb.GetConnection);
-            command.Parameters.Add("@ngaylam", SqlDbType.DateTime).Value = ngaylam;
-            command.Parameters.Add("@manv", SqlDbType.Int).Value = manv;
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-
-            if ((table.Rows.Count > 0))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+  
         public DataTable Loadfulllistdk(DateTime ngaylam)
         {
             SqlCommand command = new SqlCommand();

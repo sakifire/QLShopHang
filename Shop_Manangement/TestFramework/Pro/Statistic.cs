@@ -23,8 +23,6 @@ namespace TestFramework.Pro
             loadchart2();
             loadchart3();
             loadchart4();
-            loadchart5();
-            loadchart6();
             loadchart7();
         }
         PRODUCT product = new PRODUCT();
@@ -37,54 +35,37 @@ namespace TestFramework.Pro
             chart1.Series["Type"].XValueMember = "type";
             chart1.Series["Type"].YValueMembers = "Amount";
         }
-        public void loadchart2() //ring
+        public void loadchart2() //Đồng hồ nam
         {
             DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ nam' group by name"));
             chart2.DataSource = table;
             chart2.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart2.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
-            chart2.Series["Ring"].XValueMember = "name";
-            chart2.Series["Ring"].YValueMembers = "Amount";
+            chart2.Series["Đồng hồ nam"].XValueMember = "name";
+            chart2.Series["Đồng hồ nam"].YValueMembers = "Amount";
             chart2.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
         }
-        public void loadchart3() //watch
+        public void loadchart3() //Đồng hồ nữ
         {
             DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ nữ' group by name"));
             chart3.DataSource = table;
             chart3.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart3.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
-            chart3.Series["Watch"].XValueMember = "name";
-            chart3.Series["Watch"].YValueMembers = "Amount";
-        }
+            chart3.Series["Đồng hồ nữ"].XValueMember = "name";
+            chart3.Series["Đồng hồ nữ"].YValueMembers = "Amount";
+            chart3.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
 
-        public void loadchart4() //necklace
+        }
+        public void loadchart4() //Đồng hồ trẻ em
         {
             DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type = N'Đồng hồ trẻ em' group by name"));
             chart4.DataSource = table;
             chart4.ChartAreas["ChartArea1"].AxisX.Title = "Name";
             chart4.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
-            chart4.Series["Necklace"].XValueMember = "name";
-            chart4.Series["Necklace"].YValueMembers = "Amount";
-        }
-        public void loadchart5() // earring
-        {
-            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type ='Earring' group by name"));
-            chart5.DataSource = table;
-            chart5.ChartAreas["ChartArea1"].AxisX.Title = "Name";
-            chart5.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
-            chart5.Series["Earring"].XValueMember = "name";
-            chart5.Series["Earring"].YValueMembers = "Amount";
-        }
+            chart4.Series["Đồng hồ trẻ em"].XValueMember = "name";
+            chart4.Series["Đồng hồ trẻ em"].YValueMembers = "Amount";
+            chart4.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
 
-        public void loadchart6() // bracklet
-        {
-            DataTable table = product.getProducts(new System.Data.SqlClient.SqlCommand("select name, sum(curnumber) as Amount from Product where type ='Barcelet' group by name"));
-            chart6.DataSource = table;
-            chart6.ChartAreas["ChartArea1"].AxisX.Title = "Name";
-            chart6.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
-            chart6.Series["Bracelet"].XValueMember = "name";
-            chart6.Series["Bracelet"].YValueMembers = "Amount";
-            chart6.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
         }
         public void loadchart7() 
         {
@@ -94,7 +75,7 @@ namespace TestFramework.Pro
             chart7.ChartAreas["ChartArea1"].AxisY.Title = "Amount";
             chart7.Series["Product"].XValueMember = "name";
             chart7.Series["Product"].YValueMembers = "Amount";
-            // chart7.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            chart7.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
         }
 
         private void btn2_CheckedChanged(object sender, EventArgs e)
@@ -102,9 +83,9 @@ namespace TestFramework.Pro
             if (btn2.Checked == true)
             {
                 chart7.Visible = true;
-                btnbongtai.Visible = true;
-                btndongho.Visible = true;
-                btnnhan.Visible = true;
+                btnTreEm.Visible = true;
+                btnNu.Visible = true;
+                btnNam.Visible = true;
             }
             else
             {
@@ -112,15 +93,15 @@ namespace TestFramework.Pro
             }
             if (btn1.Checked == true)
             {
-                btnbongtai.Visible = false;
-                btndongho.Visible = false;
-                btnnhan.Visible = false;
+                btnTreEm.Visible = false;
+                btnNu.Visible = false;
+                btnNam.Visible = false;
             }
         }
 
-        private void btnnhan_CheckedChanged(object sender, EventArgs e)
+        private void btnNam_CheckedChanged(object sender, EventArgs e)
         {
-            if (btnnhan.Checked == true)
+            if (btnNam.Checked == true)
             {
                 chart2.Visible = true;
             }
@@ -135,9 +116,9 @@ namespace TestFramework.Pro
             if (btn1.Checked == true)
             {
                 chart1.Visible = true;
-                btnbongtai.Visible = false;
-                btndongho.Visible = false;
-                btnnhan.Visible = false;
+                btnTreEm.Visible = false;
+                btnNu.Visible = false;
+                btnNam.Visible = false;
             }
             else
             {
@@ -145,9 +126,9 @@ namespace TestFramework.Pro
             }
         }
 
-        private void btndongho_CheckedChanged(object sender, EventArgs e)
+        private void btnNu_CheckedChanged(object sender, EventArgs e)
         {
-            if (btndongho.Checked == true)
+            if (btnNu.Checked == true)
             {
                 chart3.Visible = true;
             }
@@ -157,119 +138,20 @@ namespace TestFramework.Pro
             }
         }
 
-        private void btnbongtai_CheckedChanged(object sender, EventArgs e)
+        private void btnTreEm_CheckedChanged(object sender, EventArgs e)
         {
-            if (btnbongtai.Checked == true)
+            if (btnTreEm.Checked == true)
             {
-                chart5.Visible = true;
+                chart4.Visible = true;
             }
             else
             {
-                chart5.Visible = false;
+                chart4.Visible = false;
             }
-        }
-
-       
-      
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-            Manaform mana = new Manaform();
-            mana.Show();
-            this.Close();
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void addStaffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.AddStaff newstaff = new Staff.AddStaff();
-            newstaff.Show();
-            this.Close();
-        }
-
-        private void detailToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.ManageForm newma = new Staff.ManageForm();
-            newma.Show();
-            this.Close();
-        }
-
-        private void timekeepingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Timekeeping timekeeping = new Staff.Timekeeping();
-            timekeeping.Show();
-            this.Close();
-        }
-
-        private void salaryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Salary sal = new Staff.Salary();
-            sal.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.StatisticStaff stastaff = new Staff.StatisticStaff();
-            stastaff.Show();
-            this.Close();
-        }
-
-        private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manapro manapro = new Pro.manapro();
-            manapro.Show();
-            this.Close();
-        }
-
-        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            addnewProduct newpro = new addnewProduct();
-            newpro.Show();
-            this.Close();
-        }
-
-        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order neworder = new Pro.order();
-            neworder.Show();
-            this.Close();
-        }
-
-        private void saleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.SaleForm newsale = new Pro.SaleForm();
-            newsale.Show();
-            this.Close();
-        }
-
-        private void statisticToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Pro.Statistic sta = new Pro.Statistic();
-            sta.Show();
-            this.Close();
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order ord = new order();
-            ord.Show();
-            this.Close();
-        }
-
-        private void manageOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manaOrder manaord = new manaOrder();
-            manaord.Show();
             this.Close();
         }
     }

@@ -30,7 +30,7 @@ namespace TestFramework
             }
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void add_btn_Click(object sender, EventArgs e)
         {
             PRODUCT product = new PRODUCT();
             int ms, price, amount;
@@ -80,107 +80,9 @@ namespace TestFramework
                     MessageBox.Show("Error", "Add Product", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
         }
-
-        
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        private void exit_picture_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-            Pro.Manaform mana = new Pro.Manaform();
-            mana.ShowDialog();
-        }
-
-        private void lbid_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-            this.Close();
-            
-        }
-
-        private void addStaffToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.AddStaff newstaff = new Staff.AddStaff();
-            newstaff.ShowDialog();
-        }
-
-        private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manapro manapro = new Pro.manapro();
-            manapro.ShowDialog();
-
-        }
-
-        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            addnewProduct newpro = new addnewProduct();
-            newpro.ShowDialog();
-        }
-
-        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order neworder = new Pro.order();
-            neworder.ShowDialog();
-        }
-
-        private void saleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.SaleForm newsale= new Pro.SaleForm();
-            newsale.ShowDialog();
-
-        }
-
-        private void statisticToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Pro.Statistic sta = new Pro.Statistic();
-            sta.ShowDialog();
-        }
-
-        private void detailToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.ManageForm newma = new Staff.ManageForm();
-            newma.ShowDialog();
-        }
-
-        private void timekeepingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Timekeeping timekeeping = new Staff.Timekeeping();
-            timekeeping.ShowDialog();
-        }
-
-        private void salaryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.Salary sal = new Staff.Salary();
-            sal.ShowDialog();
-        }
-
-        private void statisticToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Staff.StatisticStaff stastaff = new Staff.StatisticStaff();
-            stastaff.ShowDialog();
-        }
-
-        private void newOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.order ord = new Pro.order();
-            ord.Show();
-            this.Close();
-        }
-
-        private void manageOrderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Pro.manaOrder manaord = new Pro.manaOrder();
-            manaord.Show();
             this.Close();
         }
 
@@ -212,7 +114,12 @@ namespace TestFramework
             }
             else return false;
         }
+
+
+
         #endregion logic function
+
+        
     }
 }
 

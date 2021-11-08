@@ -60,7 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\CTSALES.cs" />
+    <Compile Include="Class\Chamcong.cs" />
+    <Compile Include="Class\Sales.cs" />
     <Compile Include="Class\GlobalsMaNV.cs" />
     <Compile Include="Class\GlobalsPhone.cs" />
     <Compile Include="Class\KH.cs" />
@@ -88,7 +89,7 @@
     <Compile Include="Pro\addCus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pro\addCus.Designer.cs">
+    <Compile Include="Pro\addCus.designer.cs">
       <DependentUpon>addCus.cs</DependentUpon>
     </Compile>
     <Compile Include="Pro\addnewProduct.cs">
@@ -97,8 +98,6 @@
     <Compile Include="Pro\addnewProduct.Designer.cs">
       <DependentUpon>addnewProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\Chamcong.cs" />
-    <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NV.cs" />
     <Compile Include="Class\Globals.cs" />
     <Compile Include="Pro\InfProduct.cs">
@@ -120,7 +119,7 @@
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MyData.cs" />
-    <Compile Include="Class\PRODUCT.cs" />
+    <Compile Include="Class\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pro\Manaform.cs">
@@ -174,7 +173,7 @@
     <Compile Include="Staff\DetailsNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\DetailsNV.Designer.cs">
+    <Compile Include="Staff\DetailsNV.designer.cs">
       <DependentUpon>DetailsNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff\ManageForm.cs">
@@ -182,18 +181,6 @@
     </Compile>
     <Compile Include="Staff\ManageForm.Designer.cs">
       <DependentUpon>ManageForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Staff\Salary.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staff\Salary.Designer.cs">
-      <DependentUpon>Salary.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Staff\SalaryStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staff\SalaryStaff.Designer.cs">
-      <DependentUpon>SalaryStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff\Showfulllist.cs">
       <SubType>Form</SubType>
@@ -267,12 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\ManageForm.resx">
       <DependentUpon>ManageForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Staff\Salary.resx">
-      <DependentUpon>Salary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Staff\SalaryStaff.resx">
-      <DependentUpon>SalaryStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\Showfulllist.resx">
       <DependentUpon>Showfulllist.cs</DependentUpon>
